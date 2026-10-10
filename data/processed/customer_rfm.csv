@@ -1,0 +1,794 @@
+Customer ID,Customer Name,Segment,Orders,Revenue,Profit,First,Last,Recency,R,F,M,RFM segment
+AA-10315,Alex Avila,Consumer,5,5563.56,-362.8825,2015-03-31,2018-06-29,185,1,1,4,"At risk, high value"
+AA-10375,Allen Armold,Consumer,9,1056.39,277.3824,2015-04-21,2018-12-11,20,4,4,1,Recent / promising
+AA-10480,Andrew Allen,Consumer,4,1790.5120000000002,435.8274,2015-05-04,2018-04-15,260,1,1,2,Low engagement
+AA-10645,Anna Andreadi,Consumer,6,5086.9349999999995,857.8033,2015-06-22,2018-11-05,56,3,2,4,Recent / promising
+AB-10015,Aaron Bergman,Consumer,3,886.156,129.3465,2015-02-18,2017-11-10,416,1,1,1,Low engagement
+AB-10060,Adam Bellavance,Home Office,8,7755.62,2054.5885,2016-09-18,2018-11-06,55,3,3,4,Champions
+AB-10105,Adrian Barton,Consumer,10,14473.570999999998,5444.8055,2015-12-20,2018-11-19,42,3,4,4,Champions
+AB-10150,Aimee Bixby,Consumer,5,966.71,313.6597,2015-03-05,2018-11-19,42,3,1,1,Recent / promising
+AB-10165,Alan Barnes,Consumer,8,1113.838,220.813,2015-11-16,2018-12-05,26,4,3,1,Recent / promising
+AB-10255,Alejandro Ballentine,Home Office,9,914.5319999999999,264.5675,2015-07-22,2018-07-17,167,2,4,1,Low engagement
+AB-10600,Ann Blume,Corporate,4,1515.862,-274.9604,2015-11-18,2018-11-10,51,3,1,2,Recent / promising
+AC-10420,Alyssa Crouse,Corporate,3,925.8,-62.1342,2015-07-12,2018-05-12,233,1,1,1,Low engagement
+AC-10450,Amy Cox,Consumer,7,5527.846,1366.0098,2015-10-31,2018-12-19,12,4,3,4,Champions
+AC-10615,Ann Chong,Corporate,5,2537.6859999999997,298.8273,2016-09-15,2018-12-24,7,4,1,3,Recent / promising
+AC-10660,Anna Chung,Consumer,5,657.316,-28.700399999999995,2015-10-15,2018-03-23,283,1,1,1,Low engagement
+AD-10180,Alan Dominguez,Home Office,8,6106.88,1869.9294,2015-11-19,2018-12-01,30,4,3,4,Champions
+AF-10870,Art Ferguson,Consumer,7,2052.908,317.9712,2016-12-06,2018-11-19,42,3,3,2,Recent / promising
+AF-10885,Art Foster,Consumer,4,861.565,-163.1175,2015-05-10,2017-11-10,416,1,1,1,Low engagement
+AG-10270,Alejandro Grove,Consumer,5,2582.898,732.7399,2015-05-13,2018-03-27,279,1,2,3,"At risk, high value"
+AG-10300,Aleksandra Gannaway,Corporate,4,367.548,59.288399999999996,2015-04-26,2018-09-03,119,2,1,1,Low engagement
+AG-10330,Alex Grayson,Consumer,5,660.972,-5.137100000000006,2017-08-03,2018-12-22,9,4,2,1,Recent / promising
+AG-10390,Allen Goldenen,Consumer,5,200.945,69.2784,2015-04-19,2018-09-07,115,2,2,1,Low engagement
+AG-10495,Andrew Gjertsen,Corporate,8,2356.855,295.6668,2016-01-04,2018-10-13,79,2,3,3,"Loyal, slipping"
+AG-10525,Andy Gerbode,Corporate,4,1455.038,-152.7613,2015-08-09,2016-09-07,845,1,1,2,Low engagement
+AG-10675,Anna Gayman,Consumer,7,3489.0396000000005,-246.42570000000003,2016-05-07,2018-09-24,98,2,3,3,"Loyal, slipping"
+AG-10765,Anthony Garverick,Home Office,4,170.584,-8.431000000000001,2015-09-17,2018-10-14,78,2,1,1,Low engagement
+AG-10900,Arthur Gainer,Consumer,10,4510.797,343.6824,2015-07-23,2018-09-25,97,2,4,4,"Loyal, slipping"
+AH-10030,Aaron Hawkins,Corporate,7,1744.7,365.2152,2015-04-22,2018-12-18,13,4,3,2,Recent / promising
+AH-10075,Adam Hart,Corporate,10,3250.337,281.189,2015-11-16,2018-11-26,35,3,4,3,Champions
+AH-10120,Adrian Hane,Home Office,7,1735.5140000000001,-2.3145999999999773,2015-07-18,2018-10-31,61,3,3,2,Recent / promising
+AH-10195,Alan Haines,Corporate,4,1587.452,-378.5509,2016-03-05,2018-11-05,56,3,1,2,Recent / promising
+AH-10210,Alan Hwang,Consumer,9,4805.344,1308.5546,2015-11-29,2018-12-24,7,4,4,4,Champions
+AH-10465,Amy Hunt,Consumer,5,2495.3916,-196.12009999999998,2016-01-03,2018-05-14,231,1,2,3,"At risk, high value"
+AH-10585,Angele Hood,Consumer,4,738.504,83.96300000000001,2015-10-26,2018-12-09,22,4,1,1,Recent / promising
+AH-10690,Anna Häberlin,Corporate,12,7888.294,1298.0166,2015-04-02,2017-11-15,411,1,4,4,"Loyal, slipping"
+AI-10855,Arianne Irving,Consumer,10,4375.786,867.7271000000001,2015-04-28,2018-12-17,14,4,4,4,Champions
+AJ-10780,Anthony Jacobs,Corporate,7,4867.344,150.71300000000005,2015-01-10,2018-10-16,76,3,3,4,Champions
+AJ-10795,Anthony Johnson,Corporate,7,4501.391,1158.7064,2015-05-14,2018-07-17,167,2,3,4,"Loyal, slipping"
+AJ-10945,Ashley Jarboe,Consumer,7,1839.24,521.1351999999999,2015-03-03,2018-10-06,86,2,3,2,Low engagement
+AJ-10960,Astrea Jones,Consumer,3,629.2479999999999,60.4265,2015-09-14,2018-10-17,75,3,1,1,Recent / promising
+AM-10360,Alice McCarthy,Corporate,5,814.012,194.9878,2015-10-06,2018-12-02,29,4,2,1,Recent / promising
+AM-10705,Anne McFarland,Consumer,8,5664.022,1085.7326,2015-10-31,2018-07-21,163,2,3,4,"Loyal, slipping"
+AO-10810,Anthony O'Donnell,Corporate,1,161.28,12.096,2017-08-16,2017-08-16,502,1,1,1,Low engagement
+AP-10720,Anne Pryor,Home Office,8,1638.554,285.7888,2015-03-03,2018-11-19,42,3,3,2,Recent / promising
+AP-10915,Arthur Prichep,Consumer,10,3323.556,579.3113,2015-08-23,2018-09-23,99,2,4,3,"Loyal, slipping"
+AR-10345,Alex Russell,Corporate,4,1055.694,-221.0544,2015-12-30,2018-09-10,112,2,1,1,Low engagement
+AR-10405,Allen Rosenblatt,Corporate,5,2236.128,-98.7646,2015-10-03,2018-08-27,126,2,2,2,Low engagement
+AR-10510,Andrew Roberts,Consumer,5,264.86400000000003,43.6695,2015-05-02,2018-12-16,15,4,2,1,Recent / promising
+AR-10540,Andy Reiter,Consumer,6,6608.448,2884.6208,2015-11-25,2018-12-24,7,4,2,4,Recent / promising
+AR-10570,Anemone Ratner,Consumer,1,88.15,32.633,2017-07-14,2017-07-14,535,1,1,1,Low engagement
+AR-10825,Anthony Rawles,Corporate,8,4523.336,494.83519999999993,2015-06-30,2018-11-02,59,3,3,4,Champions
+AS-10045,Aaron Smayling,Corporate,7,3050.692,-253.57459999999998,2015-07-27,2018-10-03,89,2,3,3,"Loyal, slipping"
+AS-10090,Adam Shillingsburg,Consumer,9,3255.31,64.53739999999998,2015-09-22,2018-12-02,29,4,4,3,Champions
+AS-10135,Adrian Shami,Home Office,2,58.82,21.8496,2017-11-13,2018-11-19,42,3,1,1,Recent / promising
+AS-10225,Alan Schoenberger,Corporate,5,4260.784,719.7751000000001,2015-10-18,2018-12-08,23,4,2,4,Recent / promising
+AS-10240,Alan Shonely,Consumer,7,584.6080000000001,33.715799999999994,2015-03-15,2018-06-21,193,1,3,1,Low engagement
+AS-10285,Alejandro Savely,Corporate,6,3214.236,354.62760000000003,2017-05-21,2018-12-11,20,4,2,3,Recent / promising
+AS-10630,Ann Steele,Home Office,7,833.398,136.49190000000002,2015-08-01,2018-09-29,93,2,3,1,Low engagement
+AT-10435,Alyssa Tate,Home Office,6,1171.814,100.87680000000002,2015-11-24,2018-12-09,22,4,2,2,Recent / promising
+AT-10735,Annie Thurman,Consumer,10,3831.864,974.107,2015-08-30,2018-12-17,14,4,4,4,Champions
+AW-10840,Anthony Witt,Consumer,4,649.376,65.77250000000001,2016-04-13,2018-12-10,21,4,1,1,Recent / promising
+AW-10930,Arthur Wiediger,Home Office,7,2852.968,-104.5486,2015-07-14,2018-11-14,47,3,3,3,Champions
+AY-10555,Andy Yotov,Corporate,4,497.014,103.3499,2015-04-06,2018-12-16,15,4,1,1,Recent / promising
+AZ-10750,Annie Zypern,Consumer,6,1622.0179999999998,154.9503,2015-03-17,2018-07-23,161,2,2,2,Low engagement
+BB-10990,Barry Blumstein,Corporate,5,744.3399999999999,11.583900000000007,2015-07-27,2018-09-16,106,2,2,1,Low engagement
+BB-11545,Brenda Bowman,Corporate,9,6765.728,1015.0749999999999,2016-06-05,2018-12-02,29,4,4,4,Champions
+BC-11125,Becky Castell,Home Office,9,2933.676,251.5974,2015-07-06,2018-06-11,203,1,4,3,"Loyal, slipping"
+BD-11320,Bill Donatelli,Consumer,12,5718.521,1094.5037,2016-05-31,2018-11-27,34,3,4,4,Champions
+BD-11500,Bradley Drucker,Consumer,6,4411.2429999999995,1142.1225,2015-02-01,2018-11-25,36,3,2,4,Recent / promising
+BD-11560,Brendan Dodson,Home Office,2,320.54,116.714,2016-05-30,2018-03-27,279,1,1,1,Low engagement
+BD-11605,Brian Dahlen,Consumer,7,3288.471,634.8463,2015-01-13,2018-09-24,98,2,3,3,"Loyal, slipping"
+BD-11620,Brian DeCherney,Consumer,6,1538.11,206.75689999999997,2015-06-30,2018-10-22,70,3,2,2,Recent / promising
+BD-11635,Brian Derr,Consumer,3,582.646,141.53400000000002,2015-10-05,2018-12-21,10,4,1,1,Recent / promising
+BD-11725,Bruce Degenhardt,Consumer,6,1526.5,333.9791,2016-07-03,2018-09-28,94,2,2,2,Low engagement
+BD-11770,Bryan Davis,Consumer,6,658.466,141.265,2017-03-10,2018-02-06,328,1,2,1,Low engagement
+BE-11335,Bill Eplett,Home Office,5,4204.676,1487.7739000000001,2017-01-15,2018-09-02,120,2,2,4,Low engagement
+BE-11410,Bobby Elias,Consumer,5,2261.438,755.9150999999999,2017-02-07,2018-09-23,99,2,2,3,Low engagement
+BE-11455,Brad Eason,Home Office,6,1727.652,139.20080000000002,2016-08-02,2018-04-20,255,1,2,2,Low engagement
+BF-10975,Barbara Fisher,Corporate,7,599.798,227.4384,2015-07-14,2018-09-30,92,2,3,1,Low engagement
+BF-11005,Barry Franz,Home Office,4,1333.88,-291.38109999999995,2015-09-25,2018-11-21,40,3,1,2,Recent / promising
+BF-11020,Barry Französisch,Corporate,8,2888.506,302.02,2015-02-15,2018-10-17,75,3,3,3,Champions
+BF-11080,Bart Folk,Consumer,3,272.95,110.9272,2015-11-28,2018-12-05,26,4,1,1,Recent / promising
+BF-11170,Ben Ferrer,Home Office,11,5907.972,1538.2127,2015-04-13,2018-12-14,17,4,4,4,Champions
+BF-11215,Benjamin Farhat,Home Office,4,1585.162,523.2133,2015-11-09,2018-10-26,66,3,1,2,Recent / promising
+BF-11275,Beth Fritzler,Corporate,3,791.9899999999999,25.870199999999997,2015-03-22,2018-11-03,58,3,1,1,Recent / promising
+BG-11035,Barry Gonzalez,Consumer,8,2798.948,-711.4274,2015-11-05,2018-12-02,29,4,3,3,Champions
+BG-11695,Brooke Gillingham,Corporate,6,1874.172,107.5715,2015-05-11,2018-11-24,37,3,2,2,Recent / promising
+BG-11740,Bruce Geld,Consumer,6,1006.356,119.34790000000001,2015-03-23,2018-11-03,58,3,2,1,Recent / promising
+BH-11710,Brosina Hoffman,Consumer,8,6255.351,802.7898,2015-06-09,2018-12-07,24,4,3,4,Champions
+BK-11260,Berenike Kampe,Consumer,6,659.1379999999999,-63.764399999999995,2015-08-03,2018-10-14,78,2,2,1,Low engagement
+BM-11140,Becky Martin,Consumer,4,11789.63,-1659.9580999999998,2015-09-08,2018-02-26,308,1,1,4,"At risk, high value"
+BM-11575,Brendan Murry,Corporate,6,808.162,95.58160000000001,2016-09-15,2018-09-21,101,2,2,1,Low engagement
+BM-11650,Brian Moss,Corporate,11,7294.185,2199.2781,2015-07-09,2018-11-27,34,3,4,4,Champions
+BM-11785,Bryan Mills,Consumer,10,1338.842,137.7439,2015-06-06,2018-05-26,219,1,4,2,Low engagement
+BN-11470,Brad Norvell,Corporate,4,265.296,36.6131,2015-09-12,2018-12-06,25,4,1,1,Recent / promising
+BN-11515,Bradley Nguyen,Consumer,5,1459.344,340.7054,2015-03-17,2018-12-21,10,4,2,2,Recent / promising
+BO-11350,Bill Overfelt,Corporate,5,2682.728,278.77700000000004,2017-01-03,2018-08-15,138,2,2,3,Low engagement
+BO-11425,Bobby Odegard,Consumer,2,130.83,59.4522,2016-09-10,2018-10-16,76,3,1,1,Recent / promising
+BP-11050,Barry Pond,Corporate,5,983.42,209.78300000000002,2015-10-12,2018-10-08,84,2,2,1,Low engagement
+BP-11095,Bart Pistole,Corporate,12,2442.044,433.9751,2015-06-07,2018-12-13,18,4,4,3,Champions
+BP-11155,Becky Pak,Consumer,6,1697.8609999999999,647.3847000000001,2016-06-04,2018-10-02,90,2,2,2,Low engagement
+BP-11185,Ben Peterman,Corporate,9,3675.861,363.5991,2016-03-24,2018-12-29,2,4,4,3,Champions
+BP-11230,Benjamin Patterson,Consumer,5,1181.49,-197.2695,2015-04-20,2018-11-21,40,3,2,2,Recent / promising
+BP-11290,Beth Paige,Consumer,7,2475.157,-319.0637,2015-10-03,2018-12-18,13,4,3,3,Champions
+BS-11365,Bill Shonely,Corporate,5,10501.653,2616.0643999999998,2015-05-04,2017-06-20,559,1,2,4,"At risk, high value"
+BS-11380,Bill Stewart,Corporate,5,3887.834,-17.532200000000024,2015-11-29,2018-12-02,29,4,2,4,Recent / promising
+BS-11590,Brendan Sweed,Corporate,6,2454.928,381.7807,2015-01-14,2018-11-25,36,3,2,3,Recent / promising
+BS-11665,Brian Stugart,Consumer,3,3288.1099999999997,238.73680000000002,2015-06-23,2017-05-27,583,1,1,3,"At risk, high value"
+BS-11755,Bruce Stewart,Consumer,7,2562.382,-113.29840000000003,2015-05-18,2018-12-29,2,4,3,3,Champions
+BS-11800,Bryan Spruell,Home Office,2,949.4300000000001,194.0516,2016-09-26,2018-04-09,266,1,1,1,Low engagement
+BT-11305,Beth Thompson,Home Office,5,2567.656,417.5918,2015-04-25,2018-01-28,337,1,2,3,"At risk, high value"
+BT-11395,Bill Tyler,Corporate,6,2186.6130000000003,257.9163,2015-10-28,2018-03-03,303,1,2,2,Low engagement
+BT-11440,Bobby Trafton,Consumer,4,603.876,-77.5256,2015-06-04,2017-06-18,561,1,1,1,Low engagement
+BT-11485,Brad Thomas,Home Office,2,415.19599999999997,126.8694,2016-12-27,2017-03-11,660,1,1,1,Low engagement
+BT-11530,Bradley Talbott,Home Office,5,2684.4919999999997,409.4983,2015-05-21,2018-09-30,92,2,2,3,Low engagement
+BT-11680,Brian Thompson,Consumer,7,3196.752,447.74839999999995,2015-11-28,2018-12-10,21,4,3,3,Champions
+BV-11245,Benjamin Venier,Corporate,5,1523.2730000000001,315.2214,2016-03-26,2018-01-30,335,1,2,2,Low engagement
+BW-11065,Barry Weirich,Consumer,3,385.516,-58.28659999999999,2015-05-25,2018-06-01,213,1,1,1,Low engagement
+BW-11110,Bart Watters,Corporate,8,4750.358,921.2574,2016-03-20,2018-08-31,122,2,3,4,"Loyal, slipping"
+BW-11200,Ben Wallace,Consumer,6,1738.406,246.9973,2015-08-12,2018-06-10,204,1,2,2,Low engagement
+CA-11965,Carol Adams,Corporate,6,3789.7228,1143.3817,2015-01-26,2018-09-25,97,2,2,4,Low engagement
+CA-12055,Cathy Armstrong,Home Office,5,1679.7240000000002,211.2559,2016-09-05,2017-11-24,402,1,2,2,Low engagement
+CA-12265,Christina Anderson,Consumer,9,2648.2872,279.6183,2015-03-25,2018-11-04,57,3,4,3,Champions
+CA-12310,Christine Abelman,Corporate,4,1421.954,246.02179999999998,2015-07-19,2018-12-17,14,4,1,2,Recent / promising
+CA-12775,Cynthia Arntzen,Consumer,7,3041.566,204.48950000000002,2015-06-28,2018-09-01,121,2,3,3,"Loyal, slipping"
+CB-12025,Cassandra Brandow,Consumer,10,6076.139,150.2089,2015-03-21,2018-11-13,48,3,4,4,Champions
+CB-12415,Christy Brittain,Consumer,8,1949.2,272.3883,2016-11-05,2018-12-04,27,4,3,2,Recent / promising
+CB-12535,Claudia Bergmann,Corporate,8,4246.4555,1049.5601,2016-01-02,2018-06-16,198,1,3,4,"Loyal, slipping"
+CC-12100,Chad Cunningham,Home Office,6,1770.945,208.5912,2015-12-16,2017-09-29,458,1,2,2,Low engagement
+CC-12145,Charles Crestani,Consumer,7,2471.65,392.2825,2015-07-20,2018-09-15,107,2,3,3,"Loyal, slipping"
+CC-12220,Chris Cortes,Consumer,12,3913.418,393.9618,2015-09-09,2018-12-10,21,4,4,4,Champions
+CC-12370,Christopher Conant,Consumer,5,12129.072000000002,2177.0493,2017-05-23,2018-11-17,44,3,2,4,Recent / promising
+CC-12430,Chuck Clark,Home Office,10,2870.05,424.6583,2016-09-06,2018-12-30,1,4,4,3,Champions
+CC-12475,Cindy Chapman,Consumer,9,1659.438,154.851,2015-05-16,2018-11-21,40,3,4,2,Recent / promising
+CC-12550,Clay Cheatham,Consumer,3,113.832,33.870599999999996,2018-06-15,2018-12-03,28,4,1,1,Recent / promising
+CC-12610,Corey Catlett,Corporate,7,2540.631,331.434,2015-08-27,2018-11-26,35,3,3,3,Champions
+CC-12670,Craig Carreira,Consumer,7,2269.7015,187.8399,2015-12-23,2018-12-01,30,4,3,3,Champions
+CC-12685,Craig Carroll,Consumer,4,2854.1150000000002,850.1591,2015-03-22,2016-10-23,799,1,1,3,"At risk, high value"
+CD-11920,Carlos Daly,Consumer,5,2033.968,426.661,2015-03-24,2018-11-20,41,3,2,2,Recent / promising
+CD-11980,Carol Darley,Consumer,3,639.766,-206.7172,2017-11-24,2018-11-06,55,3,1,1,Recent / promising
+CD-12280,Christina DeMoss,Consumer,2,1205.584,233.0274,2018-11-05,2018-11-18,43,3,1,2,Recent / promising
+CD-12790,Cynthia Delaney,Home Office,5,1860.732,403.8422,2015-02-02,2017-11-26,400,1,2,2,Low engagement
+CG-12040,Catherine Glotzbach,Home Office,6,904.4680000000001,86.5106,2016-06-01,2018-11-11,50,3,2,1,Recent / promising
+CG-12520,Claire Gute,Consumer,3,1148.7800000000002,169.93439999999998,2016-10-15,2018-01-26,339,1,1,2,Low engagement
+CH-12070,Cathy Hwang,Home Office,3,1537.236,195.15109999999999,2016-06-25,2017-02-08,691,1,1,2,Low engagement
+CJ-11875,Carl Jackson,Corporate,1,16.52,1.652,2017-12-30,2017-12-30,366,1,1,1,Low engagement
+CJ-12010,Caroline Jumper,Consumer,8,11164.974,858.7414,2017-03-10,2018-06-24,190,1,3,4,"Loyal, slipping"
+CK-12205,Chloris Kastensmidt,Consumer,13,3154.855,141.2831,2015-03-11,2018-11-21,40,3,4,3,Champions
+CK-12325,Christine Kargatis,Home Office,5,2945.321,261.22090000000003,2015-03-14,2018-09-01,121,2,2,3,Low engagement
+CK-12595,Clytie Kelty,Consumer,11,2372.75,497.70980000000003,2015-12-26,2018-11-17,44,3,4,3,Champions
+CK-12760,Cyma Kinney,Corporate,9,1582.109,-338.4311,2015-02-07,2018-10-09,83,2,4,2,Low engagement
+CL-11890,Carl Ludwig,Consumer,4,1262.0140000000001,328.0847,2015-07-26,2018-09-15,107,2,1,2,Low engagement
+CL-12565,Clay Ludtke,Consumer,12,10880.546,1933.7830999999999,2015-03-04,2018-03-21,285,1,4,4,"Loyal, slipping"
+CL-12700,Craig Leslie,Home Office,5,2353.586,229.00990000000002,2017-04-24,2018-09-16,106,2,2,3,Low engagement
+CM-11815,Candace McMahon,Corporate,6,1673.888,214.463,2015-11-14,2018-08-21,132,2,2,2,Low engagement
+CM-11935,Carlos Meador,Consumer,2,565.392,-43.732400000000005,2016-09-24,2017-01-22,708,1,1,1,Low engagement
+CM-12115,Chad McGuire,Consumer,4,1661.6100000000001,409.0679,2016-03-29,2018-12-22,9,4,1,2,Recent / promising
+CM-12160,Charles McCrossin,Consumer,6,2533.314,-394.3686,2017-10-21,2018-12-04,27,4,2,3,Recent / promising
+CM-12190,Charlotte Melton,Consumer,6,1475.144,91.2033,2016-09-18,2018-12-22,9,4,2,2,Recent / promising
+CM-12235,Chris McAfee,Consumer,5,2305.712,365.0387,2017-05-01,2017-12-10,386,1,2,3,"At risk, high value"
+CM-12385,Christopher Martinez,Consumer,4,8954.019999999999,3899.8903999999998,2016-03-16,2018-11-23,38,3,1,4,Recent / promising
+CM-12445,Chuck Magee,Consumer,3,287.99,64.4296,2015-06-09,2017-10-20,437,1,1,1,Low engagement
+CM-12655,Corinna Mitchell,Home Office,6,6339.5576,1572.4585,2016-03-19,2018-12-03,28,4,2,4,Recent / promising
+CM-12715,Craig Molinari,Corporate,4,3984.4524,176.3108,2015-03-07,2016-03-01,1035,1,1,4,"At risk, high value"
+CP-12085,Cathy Prescott,Corporate,8,5402.254,427.0258,2015-12-04,2018-10-09,83,2,3,4,"Loyal, slipping"
+CP-12340,Christine Phan,Corporate,8,5888.275,-1850.3029000000001,2015-03-17,2018-07-23,161,2,3,4,"Loyal, slipping"
+CR-12580,Clay Rozendal,Home Office,4,2148.852,74.40129999999999,2017-04-18,2018-11-03,58,3,1,2,Recent / promising
+CR-12625,Corey Roper,Home Office,3,475.9,144.7594,2015-06-01,2017-09-16,471,1,1,1,Low engagement
+CR-12730,Craig Reiter,Consumer,4,1600.55,306.9176,2015-08-20,2018-10-13,79,2,1,2,Low engagement
+CR-12820,Cyra Reiten,Home Office,3,1397.8724,83.27029999999999,2016-01-24,2018-10-06,86,2,1,2,Low engagement
+CS-11845,Cari Sayre,Corporate,5,1278.954,185.3776,2015-12-14,2018-09-30,92,2,2,2,Low engagement
+CS-11860,Cari Schnelling,Consumer,6,537.632,105.8275,2015-05-02,2018-07-21,163,2,2,1,Low engagement
+CS-11950,Carlos Soltero,Consumer,11,3036.547,-126.4223,2015-06-08,2018-12-05,26,4,4,3,Champions
+CS-12130,Chad Sievert,Consumer,4,884.64,143.8339,2015-08-05,2017-08-28,490,1,1,1,Low engagement
+CS-12175,Charles Sheldon,Corporate,5,844.4580000000001,113.1405,2015-08-12,2018-05-12,233,1,2,1,Low engagement
+CS-12250,Chris Selesnick,Corporate,12,2754.216,738.3626,2015-01-13,2018-12-04,27,4,4,3,Champions
+CS-12355,Christine Sundaresam,Consumer,11,3202.1620000000003,831.9432,2015-08-15,2018-12-24,7,4,4,3,Champions
+CS-12400,Christopher Schild,Home Office,9,3651.8585000000003,-342.80330000000004,2015-09-26,2018-12-28,3,4,4,3,Champions
+CS-12460,Chuck Sachs,Consumer,2,550.644,156.2593,2018-07-03,2018-12-03,28,4,1,1,Recent / promising
+CS-12490,Cindy Schnelling,Corporate,4,1077.2285,-302.8761,2016-01-12,2017-11-01,425,1,1,1,Low engagement
+CS-12505,Cindy Stewart,Consumer,6,5690.054999999999,-6626.389499999999,2015-03-26,2018-11-02,59,3,2,4,Recent / promising
+CT-11995,Carol Triggs,Consumer,8,3241.898,161.22629999999995,2015-05-07,2018-09-25,97,2,3,3,"Loyal, slipping"
+CV-12295,Christina VanderZanden,Consumer,5,2830.6279999999997,493.0861,2015-03-28,2018-04-20,255,1,2,3,"At risk, high value"
+CV-12805,Cynthia Voltz,Corporate,9,2370.3136,98.99749999999999,2017-05-09,2018-12-25,6,4,4,3,Champions
+CW-11905,Carl Weiss,Home Office,6,1136.592,370.8298,2015-06-09,2018-12-08,23,4,2,1,Recent / promising
+CY-12745,Craig Yedwab,Corporate,8,2900.026,60.64670000000001,2015-12-12,2018-10-31,61,3,3,3,Champions
+Co-12640,Corey-Lock,Consumer,5,1300.076,205.62820000000002,2015-06-20,2017-06-29,550,1,2,2,Low engagement
+DA-13450,Dianna Arnett,Home Office,4,156.76,56.7904,2015-04-25,2018-01-12,353,1,1,1,Low engagement
+DB-12910,Daniel Byrd,Home Office,8,2171.599,431.3748,2015-10-24,2018-12-09,22,4,3,2,Recent / promising
+DB-12970,Darren Budd,Corporate,5,2839.2272,213.00289999999998,2015-11-12,2018-05-03,242,1,2,3,"At risk, high value"
+DB-13060,Dave Brooks,Consumer,7,4531.646,473.0272,2015-03-01,2018-12-14,17,4,3,4,Champions
+DB-13120,David Bremer,Corporate,7,2973.094,-1421.7692,2016-05-01,2018-11-12,49,3,3,3,Champions
+DB-13210,Dean Braden,Consumer,10,2332.577,169.9679,2016-03-22,2018-12-21,10,4,4,3,Champions
+DB-13270,Deborah Brumfield,Home Office,8,4655.897,841.8263999999999,2015-02-04,2018-11-07,54,3,3,4,Champions
+DB-13360,Dennis Bolton,Home Office,5,1081.466,291.0085,2015-11-19,2018-04-10,265,1,2,1,Low engagement
+DB-13405,Denny Blanton,Consumer,4,1711.692,438.9092,2016-08-08,2018-06-26,188,1,1,2,Low engagement
+DB-13555,Dorothy Badders,Corporate,7,3908.8028,109.32700000000001,2015-04-21,2018-09-14,108,2,3,4,"Loyal, slipping"
+DB-13615,Doug Bickford,Consumer,7,1989.05,438.80119999999994,2015-09-30,2018-11-27,34,3,3,2,Recent / promising
+DB-13660,Duane Benoit,Consumer,7,1155.202,177.67350000000002,2015-06-17,2018-12-18,13,4,3,2,Recent / promising
+DC-12850,Dan Campbell,Consumer,9,3336.168,-1441.6312999999998,2015-07-05,2018-11-23,38,3,4,3,Champions
+DC-13285,Debra Catini,Consumer,5,1174.618,132.06820000000002,2015-12-29,2018-12-07,24,4,2,2,Recent / promising
+DD-13570,Dorothy Dickinson,Consumer,6,269.542,36.4344,2015-03-31,2018-11-19,42,3,2,1,Recent / promising
+DE-13255,Deanra Eno,Home Office,5,2550.874,464.47139999999996,2015-08-22,2017-01-11,719,1,2,3,"At risk, high value"
+DF-13135,David Flashing,Consumer,3,2390.534,-259.3097,2015-10-04,2017-01-30,700,1,1,3,"At risk, high value"
+DG-13300,Deirdre Greer,Corporate,5,3195.818,562.7761,2015-11-01,2018-11-28,33,3,2,3,Recent / promising
+DH-13075,Dave Hallsten,Corporate,6,4932.872,1193.7404,2015-11-21,2018-03-28,278,1,2,4,"At risk, high value"
+DH-13675,Duane Huffman,Home Office,4,1043.096,116.667,2015-08-12,2016-11-15,776,1,1,1,Low engagement
+DJ-13420,Denny Joy,Corporate,4,2012.52,483.03499999999997,2015-12-08,2017-04-02,638,1,1,2,Low engagement
+DJ-13510,Don Jones,Corporate,8,2501.6879999999996,345.2521,2015-08-17,2018-11-12,49,3,3,3,Champions
+DJ-13630,Doug Jacobs,Consumer,3,3356.398,731.5644,2016-12-14,2018-12-18,13,4,1,3,Recent / promising
+DK-12835,Damala Kotsonis,Corporate,12,3256.48,881.1228000000001,2015-03-26,2018-12-09,22,4,4,3,Champions
+DK-12895,Dana Kaydos,Consumer,5,4282.176,937.6496,2016-03-08,2018-11-15,46,3,2,4,Recent / promising
+DK-12985,Darren Koutras,Consumer,5,1687.04,-107.35379999999998,2015-11-24,2018-12-23,8,4,2,2,Recent / promising
+DK-13090,Dave Kipp,Consumer,7,2650.557,536.3935,2016-03-02,2018-11-18,43,3,3,3,Champions
+DK-13150,David Kendrick,Corporate,2,797.832,249.9447,2015-12-05,2018-12-20,11,4,1,1,Recent / promising
+DK-13225,Dean Katz,Corporate,9,4802.394,209.89940000000004,2015-03-14,2018-12-20,11,4,4,4,Champions
+DK-13375,Dennis Kane,Consumer,8,3318.486,377.0799,2015-09-07,2018-12-11,20,4,3,3,Champions
+DL-12865,Dan Lawera,Consumer,8,1503.112,322.2449,2015-06-29,2018-09-21,101,2,3,2,Low engagement
+DL-12925,Daniel Lacy,Consumer,6,3272.2,4.213200000000029,2015-09-09,2018-11-03,58,3,2,3,Recent / promising
+DL-13315,Delfina Latchford,Consumer,8,1458.258,288.8732,2015-01-16,2018-12-08,23,4,3,2,Recent / promising
+DL-13330,Denise Leinenbach,Consumer,4,585.02,222.6812,2015-06-23,2018-11-03,58,3,1,1,Recent / promising
+DL-13495,Dionis Lloyd,Corporate,8,3539.322,-52.78799999999997,2016-12-25,2018-10-15,77,2,3,3,"Loyal, slipping"
+DM-12955,Dario Medina,Corporate,7,1322.034,108.7583,2015-09-30,2018-09-07,115,2,3,2,Low engagement
+DM-13015,Darrin Martin,Consumer,7,6345.103,1677.3931,2015-09-14,2018-11-03,58,3,3,4,Champions
+DM-13345,Denise Monton,Corporate,8,4074.4719999999998,1319.0586,2015-11-03,2018-12-08,23,4,3,4,Champions
+DM-13525,Don Miller,Corporate,3,1376.792,199.7688,2015-07-05,2017-09-05,482,1,1,2,Low engagement
+DN-13690,Duane Noonan,Consumer,7,2139.79,540.5405000000001,2015-09-20,2018-05-27,218,1,3,2,Low engagement
+DO-13435,Denny Ordway,Consumer,9,1300.0315,-38.90860000000001,2015-10-03,2018-08-19,134,2,4,2,Low engagement
+DO-13645,Doug O'Connell,Consumer,7,1267.316,294.0676,2016-11-07,2018-12-04,27,4,3,2,Recent / promising
+DP-13000,Darren Powers,Consumer,9,1050.636,241.4524,2015-01-03,2018-08-26,127,2,4,1,Low engagement
+DP-13105,Dave Poirier,Corporate,8,2215.002,563.1761,2016-08-22,2018-12-24,7,4,3,2,Recent / promising
+DP-13165,David Philippe,Consumer,2,1058.616,-40.93759999999999,2015-12-02,2016-10-10,812,1,1,1,Low engagement
+DP-13390,Dennis Pardue,Home Office,9,5480.723999999999,1571.8318,2015-07-05,2018-01-06,359,1,4,4,"Loyal, slipping"
+DR-12880,Dan Reichenbach,Corporate,9,6528.034000000001,1641.8613,2016-09-25,2018-12-27,4,4,4,4,Champions
+DR-12940,Daniel Raglin,Home Office,8,8350.868,2869.0759999999996,2015-03-28,2018-11-10,51,3,3,4,Champions
+DS-13030,Darrin Sayre,Home Office,4,1762.213,193.3319,2015-07-09,2018-09-28,94,2,1,2,Low engagement
+DS-13180,David Smith,Corporate,9,2881.8128,163.6993,2015-04-28,2018-12-07,24,4,4,3,Champions
+DV-13045,Darrin Van Huff,Corporate,5,1119.483,-427.184,2017-06-12,2018-12-11,20,4,2,1,Recent / promising
+DV-13465,Dianna Vittorini,Consumer,6,3341.587,353.2127,2015-06-22,2018-12-01,30,4,2,3,Recent / promising
+DW-13195,David Wiener,Corporate,6,1080.751,-86.87379999999999,2015-01-18,2018-10-22,70,3,2,1,Recent / promising
+DW-13480,Dianna Wilson,Home Office,5,5271.628,1348.7556,2015-06-01,2018-05-27,218,1,2,4,"At risk, high value"
+DW-13540,Don Weiss,Consumer,5,344.08,69.6672,2017-02-27,2018-09-23,99,2,2,1,Low engagement
+DW-13585,Dorothy Wardle,Corporate,7,1204.854,-266.8966,2015-08-24,2018-05-02,243,1,3,2,Low engagement
+Dl-13600,Dorris liebe,Corporate,5,755.602,175.2388,2015-03-30,2018-09-02,120,2,2,1,Low engagement
+Dp-13240,Dean percer,Home Office,11,7198.7609999999995,333.36479999999995,2015-05-26,2018-10-07,85,2,4,4,"Loyal, slipping"
+EA-14035,Erin Ashbrook,Corporate,13,2846.705,-52.74059999999998,2015-09-13,2018-07-31,153,2,4,3,"Loyal, slipping"
+EB-13705,Ed Braxton,Corporate,9,3644.978,13.621500000000005,2015-07-08,2018-11-12,49,3,4,3,Champions
+EB-13750,Edward Becker,Corporate,10,3236.314,-80.28599999999999,2016-03-12,2018-11-25,36,3,4,3,Champions
+EB-13840,Ellis Ballard,Corporate,5,4358.128,656.1988,2015-05-30,2018-10-01,91,2,2,4,Low engagement
+EB-13870,Emily Burns,Consumer,10,2767.219,261.5315,2015-05-05,2018-09-21,101,2,4,3,"Loyal, slipping"
+EB-13930,Eric Barreto,Consumer,5,944.6000000000001,0.6042000000000058,2015-02-02,2018-07-22,162,2,2,1,Low engagement
+EB-13975,Erica Bern,Corporate,4,1643.255,162.8781,2017-01-04,2018-12-30,1,4,1,2,Recent / promising
+EB-14110,Eugene Barchas,Consumer,6,3071.126,184.7656,2016-04-13,2018-09-08,114,2,2,3,Low engagement
+EB-14170,Evan Bailliet,Consumer,6,1186.326,282.1701,2015-09-29,2018-10-09,83,2,2,2,Low engagement
+EC-14050,Erin Creighton,Consumer,5,461.914,96.4256,2015-12-17,2018-11-07,54,3,2,1,Recent / promising
+ED-13885,Emily Ducich,Home Office,8,3484.92,670.4435000000001,2015-08-09,2018-08-17,136,2,3,3,"Loyal, slipping"
+EG-13900,Emily Grady,Consumer,5,1832.02,104.2656,2016-11-02,2018-12-08,23,4,2,2,Recent / promising
+EH-13765,Edward Hooks,Corporate,12,10310.880000000001,1393.5154,2015-04-12,2018-08-17,136,2,4,4,"Loyal, slipping"
+EH-13945,Eric Hoffmann,Consumer,8,684.1709999999999,53.53980000000001,2015-07-02,2018-05-27,218,1,3,1,Low engagement
+EH-13990,Erica Hackney,Consumer,6,825.9499999999999,150.3759,2015-01-15,2017-11-20,406,1,2,1,Low engagement
+EH-14005,Erica Hernandez,Home Office,7,1219.53,-94.14079999999997,2015-05-13,2018-12-28,3,4,3,2,Recent / promising
+EH-14125,Eugene Hildebrand,Home Office,10,3082.653,96.27019999999999,2015-10-19,2018-07-31,153,2,4,3,"Loyal, slipping"
+EH-14185,Evan Henry,Consumer,6,923.884,242.1107,2015-05-22,2018-09-16,106,2,2,1,Low engagement
+EJ-13720,Ed Jacobs,Consumer,4,2162.174,387.0176,2015-01-27,2018-03-03,303,1,1,2,Low engagement
+EJ-14155,Eva Jacobs,Consumer,5,2656.691,451.87550000000005,2015-03-03,2018-11-03,58,3,2,3,Recent / promising
+EK-13795,Eileen Kiefer,Home Office,4,1303.478,97.10659999999999,2015-03-18,2018-11-16,45,3,1,2,Recent / promising
+EL-13735,Ed Ludwig,Home Office,2,124.28,27.1154,2017-04-22,2018-10-14,78,2,1,1,Low engagement
+EM-13810,Eleni McCrary,Corporate,5,2567.0099999999998,-133.8275,2016-06-07,2018-08-20,133,2,2,3,Low engagement
+EM-13825,Elizabeth Moffitt,Corporate,8,2339.598,682.5541999999999,2015-12-02,2018-11-05,56,3,3,3,Champions
+EM-13960,Eric Murdock,Consumer,5,933.704,102.29599999999999,2016-10-01,2018-08-01,152,2,2,1,Low engagement
+EM-14065,Erin Mull,Consumer,4,228.99,40.15459999999999,2015-07-22,2018-11-13,48,3,1,1,Recent / promising
+EM-14095,Eudokia Martin,Corporate,4,1041.0420000000001,240.2362,2016-08-07,2018-09-08,114,2,1,1,Low engagement
+EM-14140,Eugene Moren,Home Office,6,4588.436000000001,1319.3655,2015-07-19,2018-11-12,49,3,2,4,Recent / promising
+EM-14200,Evan Minnotte,Home Office,3,366.822,21.7721,2016-12-20,2018-07-25,159,2,1,1,Low engagement
+EN-13780,Edward Nazzal,Consumer,4,2199.366,496.1131,2016-05-30,2018-03-18,288,1,1,2,Low engagement
+EP-13915,Emily Phan,Consumer,17,5478.0608,144.9578,2015-07-06,2018-12-18,13,4,4,4,Champions
+ER-13855,Elpida Rittenbach,Corporate,3,1245.788,-295.7398,2016-12-21,2017-11-04,422,1,1,2,Low engagement
+ES-14020,Erica Smith,Consumer,5,3510.4579999999996,1003.2935,2015-09-20,2018-11-20,41,3,2,3,Recent / promising
+ES-14080,Erin Smith,Corporate,9,4657.924,246.6661,2015-10-02,2018-12-02,29,4,4,4,Champions
+FA-14230,Frank Atkinson,Corporate,7,2984.054,520.5229,2015-09-19,2018-09-24,98,2,3,3,"Loyal, slipping"
+FC-14245,Frank Carlisle,Home Office,7,3418.742,1217.1662000000001,2016-06-13,2018-10-21,71,3,3,3,Champions
+FC-14335,Fred Chung,Corporate,7,3889.366,714.2926,2015-10-10,2018-06-29,185,1,3,4,"Loyal, slipping"
+FG-14260,Frank Gastineau,Home Office,7,1383.144,394.73969999999997,2015-05-21,2018-11-26,35,3,3,2,Recent / promising
+FH-14275,Frank Hawley,Corporate,10,4256.272,1073.2676,2015-04-06,2018-11-23,38,3,4,4,Champions
+FH-14350,Fred Harton,Consumer,4,2271.284,706.289,2016-08-23,2018-06-01,213,1,1,3,"At risk, high value"
+FH-14365,Fred Hopkins,Corporate,8,6987.196,2050.2826,2015-10-20,2018-12-25,6,4,3,4,Champions
+FM-14215,Filia McAdams,Corporate,10,2456.638,249.6808,2015-03-11,2018-12-23,8,4,4,3,Champions
+FM-14290,Frank Merwin,Home Office,9,3736.198,198.10949999999997,2015-08-26,2018-11-24,37,3,4,3,Champions
+FM-14380,Fred McMath,Consumer,9,2523.266,191.4898,2016-07-12,2018-08-07,146,2,4,3,"Loyal, slipping"
+FO-14305,Frank Olsen,Consumer,10,2678.438,215.59689999999998,2015-06-09,2018-11-22,39,3,4,3,Champions
+FP-14320,Frank Preis,Consumer,8,4046.746,406.44730000000004,2015-12-07,2018-12-07,24,4,3,4,Champions
+FW-14395,Fred Wasserman,Corporate,3,79.75,23.491300000000003,2016-03-22,2018-01-02,363,1,1,1,Low engagement
+GA-14515,George Ashbrook,Consumer,8,3919.7760000000003,840.899,2015-05-18,2018-08-03,150,2,3,4,"Loyal, slipping"
+GA-14725,Guy Armstrong,Consumer,11,1398.382,136.70790000000002,2015-02-11,2018-12-25,6,4,4,2,Recent / promising
+GB-14530,George Bell,Corporate,11,1568.44,7.837100000000003,2015-04-28,2018-10-29,63,3,4,2,Recent / promising
+GB-14575,Giulietta Baptist,Consumer,5,4716.288,1135.8393,2016-06-12,2018-12-17,14,4,2,4,Recent / promising
+GD-14590,Giulietta Dortch,Corporate,4,1888.07,230.93729999999996,2015-05-05,2018-12-25,6,4,1,2,Recent / promising
+GG-14650,Greg Guthrie,Corporate,9,2224.0,12.698500000000008,2015-10-31,2018-11-17,44,3,4,2,Recent / promising
+GH-14410,Gary Hansen,Home Office,9,2819.4669999999996,-576.8335,2015-07-09,2018-10-16,76,3,4,3,Champions
+GH-14425,Gary Hwang,Consumer,4,4172.8460000000005,1176.4181,2015-06-17,2018-11-10,51,3,1,4,Recent / promising
+GH-14485,Gene Hale,Corporate,2,1361.2440000000001,-95.4498,2016-10-08,2017-12-08,388,1,1,2,Low engagement
+GH-14665,Greg Hansen,Consumer,2,146.94080000000002,-5.810200000000001,2016-11-17,2018-12-28,3,4,1,1,Recent / promising
+GK-14620,Grace Kelly,Corporate,9,6497.27,1448.5525,2015-06-25,2018-09-09,113,2,4,4,"Loyal, slipping"
+GM-14440,Gary McGarr,Consumer,7,3582.8199999999997,347.266,2015-03-21,2018-10-08,84,2,3,3,"Loyal, slipping"
+GM-14455,Gary Mitchum,Home Office,6,3078.624,793.2814000000001,2015-04-11,2018-12-14,17,4,2,3,Recent / promising
+GM-14500,Gene McClure,Consumer,10,1255.682,441.3185,2015-08-09,2018-09-15,107,2,4,2,Low engagement
+GM-14680,Greg Matthias,Consumer,6,3163.628,35.48649999999999,2015-05-10,2018-07-31,153,2,2,3,Low engagement
+GM-14695,Greg Maxwell,Corporate,3,6049.966,188.7235,2015-04-05,2018-09-04,118,2,1,4,Low engagement
+GP-14740,Guy Phonely,Corporate,2,236.53,31.837600000000002,2015-04-06,2016-11-26,765,1,1,1,Low engagement
+GR-14560,Georgia Rosenberg,Corporate,2,1284.38,359.83320000000003,2015-11-19,2015-11-21,1136,1,1,2,Low engagement
+GT-14635,Grant Thornton,Corporate,3,9351.212,-4108.6589,2015-06-06,2018-11-04,57,3,1,4,Recent / promising
+GT-14710,Greg Tran,Consumer,11,11820.119999999999,2163.4269,2015-05-23,2018-11-24,37,3,4,4,Champions
+GT-14755,Guy Thornton,Consumer,4,226.436,-6.139200000000002,2016-02-18,2018-11-26,35,3,1,1,Recent / promising
+GW-14605,Giulietta Weimer,Consumer,7,2189.019,-268.54229999999995,2015-03-01,2018-12-02,29,4,3,2,Recent / promising
+GZ-14470,Gary Zandusky,Consumer,9,4355.150000000001,1087.7539,2015-08-05,2018-12-23,8,4,4,4,Champions
+GZ-14545,George Zrebassa,Corporate,4,2454.6220000000003,828.661,2015-09-28,2018-07-26,158,2,1,3,Low engagement
+HA-14905,Helen Abelman,Consumer,7,2163.3,270.8574,2015-06-30,2018-10-22,70,3,3,2,Recent / promising
+HA-14920,Helen Andreada,Consumer,8,2584.158,99.1445,2015-10-11,2018-12-10,21,4,3,3,Champions
+HD-14785,Harold Dahlen,Home Office,3,251.36,-135.87599999999998,2015-05-11,2016-11-22,769,1,1,1,Low engagement
+HE-14800,Harold Engle,Corporate,4,883.5319999999999,274.4028,2017-01-30,2018-12-18,13,4,1,1,Recent / promising
+HF-14995,Herbert Flentye,Consumer,7,2533.1639999999998,-13.876799999999989,2015-05-26,2018-12-09,22,4,3,3,Champions
+HG-14845,Harry Greene,Consumer,5,785.628,147.0032,2015-04-29,2018-11-06,55,3,2,1,Recent / promising
+HG-14965,Henry Goldwyn,Corporate,12,3247.642,-2797.9635000000003,2015-09-20,2018-12-07,24,4,4,3,Champions
+HG-15025,Hunter Glantz,Consumer,7,3690.284,804.6113,2015-10-14,2018-12-24,7,4,3,3,Champions
+HH-15010,Hilary Holden,Corporate,2,218.668,86.7342,2015-08-29,2018-10-19,73,3,1,1,Recent / promising
+HJ-14875,Heather Jas,Home Office,5,358.1,98.6548,2016-04-13,2018-08-26,127,2,2,1,Low engagement
+HK-14890,Heather Kirkland,Corporate,8,4877.784,956.9451,2015-06-10,2018-08-01,152,2,3,4,"Loyal, slipping"
+HL-15040,Hunter Lopez,Consumer,6,12873.297999999999,5622.4292000000005,2015-01-20,2018-11-17,44,3,2,4,Recent / promising
+HM-14860,Harry Marie,Corporate,10,8236.7648,2437.9836,2015-07-21,2018-12-28,3,4,4,4,Champions
+HM-14980,Henry MacAllister,Consumer,4,736.276,117.2755,2016-10-02,2018-04-27,248,1,1,1,Low engagement
+HP-14815,Harold Pawlan,Home Office,7,1990.314,373.8637,2015-05-06,2018-11-30,31,4,3,2,Recent / promising
+HR-14770,Hallie Redmond,Home Office,5,1299.288,185.5794,2015-03-01,2018-12-17,14,4,2,2,Recent / promising
+HR-14830,Harold Ryan,Corporate,7,5248.787,1196.9504,2015-11-24,2018-07-24,160,2,3,4,"Loyal, slipping"
+HW-14935,Helen Wasserman,Corporate,8,9300.254,2164.1611,2016-09-27,2018-09-04,118,2,3,4,"Loyal, slipping"
+HZ-14950,Henia Zydlo,Consumer,5,886.52,-130.3879,2017-03-14,2018-11-25,36,3,2,1,Recent / promising
+IG-15085,Ivan Gibson,Consumer,4,744.574,320.4982,2015-10-18,2018-10-20,72,3,1,1,Recent / promising
+IL-15100,Ivan Liston,Consumer,7,5040.736,1121.937,2015-08-01,2018-08-10,143,2,3,4,"Loyal, slipping"
+IM-15055,Ionia McGrath,Consumer,3,2872.63,975.7701,2015-01-23,2017-11-16,410,1,1,3,"At risk, high value"
+IM-15070,Irene Maddox,Consumer,7,4930.474,514.6527,2015-12-19,2017-12-05,391,1,3,4,"Loyal, slipping"
+JA-15970,Joseph Airdo,Consumer,8,6491.026,-819.4217000000001,2015-09-17,2018-09-29,93,2,3,4,"Loyal, slipping"
+JB-15400,Jennifer Braxton,Corporate,10,1791.605,156.05319999999998,2015-09-14,2018-12-23,8,4,4,2,Recent / promising
+JB-15925,Joni Blumstein,Consumer,3,900.552,-286.9808,2015-12-05,2016-12-24,737,1,1,1,Low engagement
+JB-16000,Joy Bell-,Consumer,7,644.1188,126.76490000000001,2017-01-10,2018-11-17,44,3,3,1,Recent / promising
+JB-16045,Julia Barnett,Home Office,5,2518.115,201.51850000000002,2016-05-03,2018-12-23,8,4,2,3,Recent / promising
+JC-15340,Jasper Cacioppo,Consumer,4,71.263,-0.35560000000000036,2015-01-28,2018-09-07,115,2,1,1,Low engagement
+JC-15385,Jenna Caffey,Consumer,1,1058.108,502.92440000000005,2018-07-08,2018-07-08,176,2,1,1,Low engagement
+JC-15775,John Castell,Consumer,9,2772.055,279.56919999999997,2015-09-14,2018-07-25,159,2,4,3,"Loyal, slipping"
+JC-16105,Julie Creighton,Corporate,5,858.576,201.5952,2015-11-18,2018-11-03,58,3,2,1,Recent / promising
+JD-15790,John Dryer,Consumer,5,2152.352,-266.55249999999995,2016-04-02,2018-09-04,118,2,2,2,Low engagement
+JD-15895,Jonathan Doherty,Corporate,11,7610.8640000000005,1050.2667999999999,2015-03-26,2017-12-01,395,1,4,4,"Loyal, slipping"
+JD-16015,Joy Daniels,Consumer,6,385.43,26.7605,2015-10-04,2018-09-09,113,2,2,1,Low engagement
+JD-16060,Julia Dunbar,Consumer,3,695.442,111.11410000000001,2015-09-24,2018-03-05,301,1,1,1,Low engagement
+JD-16150,Justin Deggeller,Corporate,8,8828.0305,1619.5199,2015-11-16,2018-11-19,42,3,3,4,Champions
+JE-15475,Jeremy Ellison,Consumer,6,1388.682,276.2197,2016-03-16,2018-06-20,194,1,2,2,Low engagement
+JE-15610,Jim Epp,Corporate,7,7754.976,1623.4019,2015-10-14,2018-11-12,49,3,3,4,Champions
+JE-15715,Joe Elijah,Consumer,10,8697.842999999999,1262.2926,2015-08-25,2018-11-14,47,3,4,4,Champions
+JE-15745,Joel Eaton,Consumer,13,6760.8150000000005,221.79670000000002,2015-06-22,2018-11-09,52,3,4,4,Champions
+JE-16165,Justin Ellison,Corporate,3,2697.248,789.6476,2017-12-05,2018-12-10,21,4,1,3,Recent / promising
+JF-15190,Jamie Frazer,Consumer,7,2279.5860000000002,575.1259,2015-11-15,2018-10-26,66,3,3,3,Champions
+JF-15295,Jason Fortune-,Consumer,5,955.124,97.28899999999999,2015-03-14,2018-05-19,226,1,2,1,Low engagement
+JF-15355,Jay Fein,Consumer,6,1911.844,330.199,2016-10-23,2018-09-16,106,2,2,2,Low engagement
+JF-15415,Jennifer Ferguson,Consumer,6,2371.448,635.6376,2015-06-17,2018-12-28,3,4,2,3,Recent / promising
+JF-15490,Jeremy Farry,Consumer,11,1082.918,-18.06730000000001,2015-10-19,2018-08-31,122,2,4,1,Low engagement
+JF-15565,Jill Fjeld,Consumer,8,4198.332,1073.2088,2015-10-11,2018-11-06,55,3,3,4,Champions
+JG-15115,Jack Garza,Consumer,3,2358.676,684.1911,2015-09-21,2016-12-03,758,1,1,3,"At risk, high value"
+JG-15160,James Galang,Consumer,11,6366.392,1415.6664,2015-05-30,2018-12-29,2,4,4,4,Champions
+JG-15310,Jason Gross,Corporate,6,2240.58,3.7976000000000063,2017-03-03,2018-12-28,3,4,2,2,Recent / promising
+JG-15805,John Grady,Corporate,6,1507.018,206.1019,2015-04-05,2018-05-21,224,1,2,2,Low engagement
+JH-15430,Jennifer Halladay,Consumer,4,309.281,-24.077100000000005,2015-02-24,2018-12-25,6,4,1,1,Recent / promising
+JH-15820,John Huston,Consumer,6,528.91,26.082199999999997,2015-05-19,2018-07-09,175,2,2,1,Low engagement
+JH-15910,Jonathan Howell,Consumer,7,959.477,-13.554499999999996,2016-06-12,2018-11-19,42,3,3,1,Recent / promising
+JH-15985,Joseph Holt,Consumer,6,7954.9980000000005,-644.6982,2015-08-09,2018-12-01,30,4,2,4,Recent / promising
+JH-16180,Justin Hirsh,Consumer,4,2256.3940000000002,-96.95300000000002,2016-05-25,2017-11-21,405,1,1,2,Low engagement
+JJ-15445,Jennifer Jackson,Consumer,5,709.178,200.5558,2016-03-05,2017-09-03,484,1,2,1,Low engagement
+JJ-15760,Joel Jenkins,Home Office,2,195.0,34.449200000000005,2016-10-05,2016-12-08,753,1,1,1,Low engagement
+JK-15205,Jamie Kunitz,Consumer,5,4427.142,1219.983,2015-07-11,2018-10-30,62,3,2,4,Recent / promising
+JK-15325,Jason Klamczynski,Corporate,3,383.812,55.32769999999999,2015-11-21,2018-03-18,288,1,1,1,Low engagement
+JK-15370,Jay Kimmel,Consumer,8,2709.632,330.2838,2015-04-11,2018-11-16,45,3,3,3,Champions
+JK-15625,Jim Karlsson,Consumer,7,3760.028,750.9485,2015-05-31,2018-10-30,62,3,3,3,Champions
+JK-15640,Jim Kriz,Home Office,9,4760.434,1172.5303,2015-09-19,2018-07-03,181,2,4,4,"Loyal, slipping"
+JK-15730,Joe Kamberova,Consumer,10,4867.2,55.0483,2015-11-18,2018-10-07,85,2,4,4,"Loyal, slipping"
+JK-16090,Juliana Krohn,Consumer,3,3747.668,586.6625,2016-04-21,2018-12-02,29,4,1,3,Recent / promising
+JK-16120,Julie Kriz,Home Office,10,2932.484,122.6566,2015-11-02,2018-09-04,118,2,4,3,"Loyal, slipping"
+JL-15130,Jack Lebron,Consumer,6,1214.956,-207.79559999999998,2015-07-18,2018-12-22,9,4,2,2,Recent / promising
+JL-15175,James Lanier,Home Office,5,1571.523,209.2817,2015-12-31,2018-12-24,7,4,2,2,Recent / promising
+JL-15235,Janet Lee,Consumer,5,2203.7,54.51740000000002,2015-05-25,2018-09-02,120,2,2,2,Low engagement
+JL-15505,Jeremy Lonsdale,Consumer,6,3173.874,591.7163,2015-11-14,2018-11-11,50,3,2,3,Recent / promising
+JL-15835,John Lee,Consumer,11,9799.923,228.907,2015-04-18,2018-12-09,22,4,4,4,Champions
+JL-15850,John Lucas,Consumer,6,2725.256,779.9046,2015-07-22,2017-04-25,615,1,2,3,"At risk, high value"
+JM-15250,Janet Martin,Consumer,6,3159.1220000000003,19.82350000000004,2017-03-29,2018-11-23,38,3,2,3,Recent / promising
+JM-15265,Janet Molinari,Corporate,5,1804.146,502.6143,2015-08-25,2018-11-23,38,3,2,2,Recent / promising
+JM-15535,Jessica Myrick,Consumer,7,1733.443,356.5395,2015-09-13,2018-09-19,103,2,3,2,Low engagement
+JM-15580,Jill Matthias,Consumer,5,303.948,113.1204,2017-04-14,2018-12-30,1,4,2,1,Recent / promising
+JM-15655,Jim Mitchum,Corporate,5,864.947,117.20400000000001,2015-04-08,2018-12-22,9,4,2,1,Recent / promising
+JM-15865,John Murray,Consumer,7,7625.076000000001,1574.6163999999999,2015-11-19,2018-09-12,110,2,3,4,"Loyal, slipping"
+JM-16195,Justin MacKendrick,Consumer,10,2833.9260000000004,754.1144,2015-04-30,2018-11-03,58,3,4,3,Champions
+JO-15145,Jack O'Briant,Corporate,9,3254.949,581.4045,2015-01-06,2018-11-03,58,3,4,3,Champions
+JO-15280,Jas O'Carroll,Consumer,6,1934.272,202.13619999999997,2015-03-31,2018-09-29,93,2,2,2,Low engagement
+JO-15550,Jesus Ocampo,Home Office,5,1090.838,167.6709,2016-03-19,2018-05-29,216,1,2,1,Low engagement
+JP-15460,Jennifer Patt,Corporate,7,1669.135,429.7465,2015-08-24,2018-11-23,38,3,3,2,Recent / promising
+JP-15520,Jeremy Pistek,Consumer,7,3635.594,757.1802,2015-08-22,2018-12-22,9,4,3,3,Champions
+JP-16135,Julie Prescott,Home Office,9,1707.71,309.7116,2015-09-23,2018-09-19,103,2,4,2,Low engagement
+JR-15670,Jim Radford,Consumer,2,1156.658,-785.1645,2016-12-24,2017-05-16,594,1,1,2,Low engagement
+JR-15700,Jocasta Rupert,Consumer,1,863.88,107.985,2018-10-23,2018-10-23,69,3,1,1,Recent / promising
+JR-16210,Justin Ritter,Corporate,5,2201.686,452.37300000000005,2016-09-18,2018-11-27,34,3,2,2,Recent / promising
+JS-15595,Jill Stevenson,Corporate,4,1417.654,-175.54899999999998,2015-03-03,2018-09-02,120,2,1,2,Low engagement
+JS-15685,Jim Sink,Corporate,4,1131.0639999999999,-54.8692,2017-06-14,2018-11-18,43,3,1,1,Recent / promising
+JS-15880,John Stevenson,Consumer,5,3868.02,564.9798000000001,2015-04-08,2017-07-14,535,1,2,4,"At risk, high value"
+JS-15940,Joni Sundaresam,Home Office,5,469.169,-327.9336,2015-05-03,2017-09-23,464,1,2,1,Low engagement
+JS-16030,Joy Smith,Consumer,6,2516.494,-311.25749999999994,2015-02-27,2018-12-02,29,4,2,3,Recent / promising
+JW-15220,Jane Waco,Corporate,6,7721.714,2173.7093999999997,2016-04-30,2018-11-18,43,3,2,4,Recent / promising
+JW-15955,Joni Wasserman,Consumer,7,1244.086,-29.575899999999987,2016-08-16,2018-12-25,6,4,3,2,Recent / promising
+JW-16075,Julia West,Consumer,4,1428.731,154.06369999999998,2016-03-21,2017-09-25,462,1,1,2,Low engagement
+KA-16525,Kelly Andreada,Consumer,7,1519.506,234.9194,2015-03-11,2018-11-24,37,3,3,2,Recent / promising
+KB-16240,Karen Bern,Corporate,7,3152.6150000000002,763.9076,2015-03-31,2018-12-26,5,4,3,3,Champions
+KB-16315,Karl Braun,Consumer,9,1569.464,49.71929999999999,2015-08-26,2018-03-09,297,1,4,2,Low engagement
+KB-16405,Katrina Bavinger,Home Office,3,908.821,274.297,2016-11-20,2018-09-04,118,2,1,1,Low engagement
+KB-16585,Ken Black,Corporate,12,2744.742,579.3551,2015-04-04,2018-05-14,231,1,4,3,"Loyal, slipping"
+KB-16600,Ken Brennan,Corporate,7,983.922,293.55240000000003,2015-12-30,2018-12-29,2,4,3,1,Recent / promising
+KC-16255,Karen Carlisle,Corporate,6,2120.954,846.1217,2015-09-08,2017-11-18,408,1,2,2,Low engagement
+KC-16540,Kelly Collister,Consumer,4,3908.262,709.4219,2016-11-02,2018-09-24,98,2,1,4,Low engagement
+KC-16675,Kimberly Carter,Corporate,4,1146.05,156.7797,2015-12-13,2018-11-03,58,3,1,1,Recent / promising
+KD-16270,Karen Daniels,Consumer,5,8282.358,1107.6952000000003,2015-11-11,2017-09-02,485,1,2,4,"At risk, high value"
+KD-16345,Katherine Ducich,Consumer,6,1888.964,328.5942,2015-09-02,2018-11-19,42,3,2,2,Recent / promising
+KD-16495,Keith Dawkins,Corporate,12,8181.256,3038.6254,2015-09-28,2018-09-09,113,2,4,4,"Loyal, slipping"
+KD-16615,Ken Dana,Corporate,5,2243.5099999999998,539.7219,2016-09-13,2018-03-16,290,1,2,2,Low engagement
+KE-16420,Katrina Edelman,Corporate,8,1686.7312,397.87989999999996,2015-04-03,2018-12-04,27,4,3,2,Recent / promising
+KF-16285,Karen Ferguson,Home Office,7,10604.266,1660.1386,2015-09-26,2018-09-24,98,2,3,4,"Loyal, slipping"
+KH-16330,Katharine Harms,Corporate,8,3312.864,454.7871,2015-04-01,2018-11-20,41,3,3,3,Champions
+KH-16360,Katherine Hughes,Consumer,6,3100.612,528.2051,2015-04-29,2018-12-29,2,4,2,3,Recent / promising
+KH-16510,Keith Herrera,Consumer,7,5952.859,656.1162,2015-08-15,2018-12-08,23,4,3,4,Champions
+KH-16630,Ken Heidel,Corporate,9,3918.9660000000003,727.3786,2015-11-01,2018-11-02,59,3,4,4,Champions
+KH-16690,Kristen Hastings,Corporate,7,5990.799,1227.5091,2015-03-21,2018-12-28,3,4,3,4,Champions
+KL-16555,Kelly Lampkin,Corporate,8,5016.488,-182.78130000000002,2015-06-15,2018-12-14,17,4,4,4,Champions
+KL-16645,Ken Lonsdale,Consumer,12,14175.229000000001,806.855,2015-07-25,2018-11-13,48,3,4,4,Champions
+KM-16225,Kalyca Meade,Corporate,6,2260.958,635.1057000000001,2016-07-06,2018-12-16,15,4,2,3,Recent / promising
+KM-16375,Katherine Murray,Home Office,8,5620.186,973.7901999999999,2015-07-20,2018-11-04,57,3,4,4,Champions
+KM-16660,Khloe Miller,Consumer,5,453.538,91.1391,2015-12-22,2018-12-15,16,4,2,1,Recent / promising
+KM-16720,Kunst Miller,Consumer,8,4909.472,745.7685,2015-03-30,2018-12-02,29,4,4,4,Champions
+KN-16390,Katherine Nockton,Corporate,9,2617.272,-151.1518,2015-12-02,2018-12-11,20,4,4,3,Champions
+KN-16450,Kean Nguyen,Corporate,5,2171.962,114.3083,2015-04-12,2018-11-08,53,3,2,2,Recent / promising
+KN-16705,Kristina Nunn,Home Office,8,2280.58,329.76250000000005,2015-03-02,2018-09-23,99,2,4,3,"Loyal, slipping"
+KS-16300,Karen Seio,Corporate,3,88.472,0.11099999999999888,2016-01-13,2018-03-10,296,1,1,1,Low engagement
+KT-16465,Kean Takahito,Consumer,7,3057.1,254.0032,2015-09-08,2017-12-04,392,1,3,3,"Loyal, slipping"
+KT-16480,Kean Thornton,Consumer,10,4642.088400000001,194.0671,2015-03-10,2018-09-21,101,2,4,4,"Loyal, slipping"
+KW-16435,Katrina Willman,Consumer,5,4416.5199999999995,1756.135,2016-08-24,2018-09-25,97,2,2,4,Low engagement
+KW-16570,Kelly Williams,Consumer,4,449.096,107.92699999999999,2015-09-30,2016-11-20,771,1,1,1,Low engagement
+LA-16780,Laura Armstrong,Corporate,11,8673.222,2059.1199,2015-04-29,2018-07-29,155,2,4,4,"Loyal, slipping"
+LB-16735,Larry Blacks,Consumer,3,50.188,18.6507,2017-07-25,2018-11-12,49,3,1,1,Recent / promising
+LB-16795,Laurel Beltran,Home Office,8,4704.304,-40.13219999999996,2015-04-23,2018-07-31,153,2,4,4,"Loyal, slipping"
+LC-16870,Lena Cacioppo,Consumer,8,2580.7039999999997,-188.25110000000004,2016-05-03,2018-12-03,28,4,4,3,Champions
+LC-16885,Lena Creighton,Consumer,12,7663.126,1288.3469,2015-04-25,2018-12-14,17,4,4,4,Champions
+LC-16930,Linda Cazamias,Corporate,8,4492.946,288.26599999999996,2015-02-20,2018-11-19,42,3,4,4,Champions
+LC-16960,Lindsay Castell,Home Office,4,3246.626,299.48019999999997,2016-02-23,2017-10-20,437,1,1,3,"At risk, high value"
+LC-17050,Liz Carlisle,Consumer,5,2095.064,86.77799999999999,2015-01-31,2018-11-06,55,3,2,2,Recent / promising
+LC-17140,Logan Currie,Consumer,9,2633.582,231.12520000000004,2015-09-09,2018-12-17,14,4,4,3,Champions
+LD-16855,Lela Donovan,Corporate,1,5.304,0.4641,2017-06-26,2017-06-26,553,1,1,1,Low engagement
+LD-17005,Lisa DeCherney,Consumer,4,1961.934,557.1714,2015-09-29,2017-11-11,415,1,1,2,Low engagement
+LE-16810,Laurel Elliston,Consumer,6,1469.45,161.76489999999998,2015-05-27,2018-12-09,22,4,2,2,Recent / promising
+LF-17185,Luke Foster,Consumer,7,3930.5089999999996,-3583.977,2015-07-26,2018-12-08,23,4,3,4,Champions
+LH-16750,Larry Hughes,Consumer,3,287.426,12.627699999999999,2015-09-21,2018-08-01,152,2,1,1,Low engagement
+LH-16900,Lena Hernandez,Consumer,9,2295.332,526.0727,2015-08-19,2018-12-09,22,4,4,3,Champions
+LH-17020,Lisa Hazard,Consumer,4,318.239,-242.73989999999998,2015-09-08,2018-05-05,240,1,1,1,Low engagement
+LH-17155,Logan Haushalter,Consumer,9,1739.689,316.5202,2015-12-12,2017-12-10,386,1,4,2,Low engagement
+LL-16840,Lauren Leatherbury,Consumer,6,2741.2039999999997,560.0078,2015-04-29,2018-04-25,250,1,2,3,"At risk, high value"
+LM-17065,Liz MacKendrick,Consumer,5,1346.774,-44.87799999999999,2015-06-27,2017-12-04,392,1,2,2,Low engagement
+LO-17170,Lori Olson,Corporate,5,644.35,150.1712,2016-02-06,2018-12-28,3,4,2,1,Recent / promising
+LP-17080,Liz Pelletier,Consumer,4,756.606,110.7813,2015-06-24,2018-11-20,41,3,1,1,Recent / promising
+LP-17095,Liz Preis,Consumer,7,3653.399,338.44539999999995,2017-06-06,2018-12-21,10,4,3,3,Champions
+LR-16915,Lena Radford,Consumer,6,5142.892,535.4764,2015-08-08,2018-12-04,27,4,2,4,Recent / promising
+LR-17035,Lisa Ryan,Corporate,5,1879.306,-382.8079,2015-09-07,2018-08-20,133,2,2,2,Low engagement
+LS-16945,Linda Southworth,Corporate,6,2845.27,-318.77369999999996,2016-04-25,2018-07-05,179,2,2,3,Low engagement
+LS-16975,Lindsay Shagiari,Home Office,9,2988.674,262.63669999999996,2015-10-20,2018-12-10,21,4,4,3,Champions
+LS-17200,Luke Schmidt,Corporate,6,1010.2560000000001,244.197,2015-10-18,2018-09-25,97,2,2,1,Low engagement
+LS-17230,Lycoris Saunders,Consumer,3,368.88000000000005,39.1952,2015-01-06,2016-11-14,777,1,1,1,Low engagement
+LS-17245,Lynn Smith,Consumer,6,1008.1360000000001,348.3584,2015-10-16,2018-11-26,35,3,2,1,Recent / promising
+LT-16765,Larry Tron,Consumer,3,329.876,59.036,2015-09-01,2018-12-04,27,4,1,1,Recent / promising
+LT-17110,Liz Thompson,Consumer,8,2936.252,320.973,2015-06-01,2018-11-26,35,3,4,3,Champions
+LW-16825,Laurel Workman,Corporate,5,2238.061,32.5767,2015-05-30,2018-10-03,89,2,2,2,Low engagement
+LW-16990,Lindsay Williams,Corporate,6,3230.308,662.8339000000001,2017-05-05,2018-11-27,34,3,2,3,Recent / promising
+LW-17125,Liz Willingham,Consumer,3,1259.04,192.6312,2015-09-11,2018-06-08,206,1,1,2,Low engagement
+LW-17215,Luke Weiss,Consumer,7,5420.514,837.2411,2015-09-12,2018-12-09,22,4,3,4,Champions
+MA-17560,Matt Abelman,Home Office,11,4299.161,1240.2266,2015-08-08,2018-10-27,65,3,4,4,Champions
+MA-17995,Michelle Arnett,Home Office,6,2453.284,280.7822,2015-09-20,2018-06-27,187,1,2,3,"At risk, high value"
+MB-17305,Maria Bertelson,Consumer,10,1548.702,212.425,2015-08-08,2018-11-12,49,3,4,2,Recent / promising
+MB-18085,Mick Brown,Consumer,7,1428.231,117.8057,2015-01-05,2018-11-16,45,3,3,2,Recent / promising
+MC-17275,Marc Crier,Consumer,8,2725.982,461.0014,2015-09-08,2018-10-15,77,2,4,3,"Loyal, slipping"
+MC-17425,Mark Cousins,Corporate,5,4432.138,1802.3903,2015-05-30,2017-11-26,400,1,2,4,"At risk, high value"
+MC-17575,Matt Collins,Consumer,8,1303.893,210.7493,2015-12-02,2018-12-03,28,4,4,2,Recent / promising
+MC-17590,Matt Collister,Corporate,6,2426.067,288.98409999999996,2015-05-20,2018-11-09,52,3,3,3,Champions
+MC-17605,Matt Connell,Corporate,8,2258.192,195.4486,2015-03-19,2018-09-09,113,2,4,3,"Loyal, slipping"
+MC-17635,Matthew Clasen,Corporate,4,795.154,-247.94350000000003,2015-11-28,2018-06-24,190,1,1,1,Low engagement
+MC-17845,Michael Chen,Consumer,7,3805.714,698.4174,2015-07-05,2018-12-29,2,4,3,4,Champions
+MC-18100,Mick Crebagga,Consumer,10,2218.98,-64.1668,2015-06-18,2018-11-19,42,3,4,2,Recent / promising
+MC-18130,Mike Caudle,Corporate,5,1581.9979999999998,121.7565,2015-09-19,2017-12-26,370,1,2,2,Low engagement
+MD-17350,Maribeth Dona,Consumer,7,3766.382,-241.94999999999996,2015-11-05,2018-09-04,118,2,3,3,"Loyal, slipping"
+MD-17860,Michael Dominguez,Corporate,5,1204.91,-4.040300000000002,2015-12-02,2018-11-24,37,3,2,2,Recent / promising
+ME-17320,Maria Etezadi,Home Office,10,10663.728000000001,1859.4695,2015-01-06,2018-11-18,43,3,4,4,Champions
+ME-17725,Max Engle,Consumer,8,1908.4532,77.81280000000001,2015-07-12,2018-12-02,29,4,4,2,Recent / promising
+ME-18010,Michelle Ellison,Corporate,4,1256.944,107.3604,2015-07-21,2018-09-29,93,2,1,2,Low engagement
+MF-17665,Maureen Fritzler,Corporate,5,937.039,-341.52650000000006,2015-12-30,2017-11-04,422,1,2,1,Low engagement
+MF-18250,Monica Federle,Corporate,5,1758.3,456.86080000000004,2015-09-15,2018-12-23,8,4,2,2,Recent / promising
+MG-17650,Matthew Grinstein,Home Office,7,3785.276,341.898,2015-08-09,2018-12-01,30,4,3,3,Champions
+MG-17680,Maureen Gastineau,Home Office,4,2350.188,25.888599999999972,2015-10-22,2018-09-29,93,2,1,3,Low engagement
+MG-17695,Maureen Gnade,Consumer,3,1342.282,-398.79319999999996,2015-12-26,2017-06-23,556,1,1,2,Low engagement
+MG-17875,Michael Grace,Home Office,5,1242.8329999999999,-470.7684,2015-02-23,2018-09-05,117,2,2,2,Low engagement
+MG-17890,Michael Granlund,Home Office,9,776.384,171.7372,2015-12-29,2018-09-22,100,2,4,1,Low engagement
+MG-18145,Mike Gockenbach,Consumer,4,3061.543,-93.603,2015-03-29,2018-10-07,85,2,1,3,Low engagement
+MG-18205,Mitch Gastineau,Corporate,1,16.739,-1.2453,2018-04-10,2018-04-10,265,1,1,1,Low engagement
+MH-17290,Marc Harrigan,Home Office,6,2394.025,28.761200000000038,2015-04-26,2018-09-02,120,2,3,3,"Loyal, slipping"
+MH-17440,Mark Haberlin,Corporate,4,400.016,61.428599999999996,2015-02-04,2017-12-19,377,1,1,1,Low engagement
+MH-17455,Mark Hamilton,Consumer,8,2456.1820000000002,484.77330000000006,2015-07-11,2018-10-06,86,2,4,3,"Loyal, slipping"
+MH-17620,Matt Hagelstein,Corporate,4,1252.8,122.3612,2016-12-05,2018-07-28,156,2,1,2,Low engagement
+MH-17785,Maya Herman,Corporate,7,2203.7780000000002,238.5614,2015-05-27,2018-09-23,99,2,3,2,Low engagement
+MH-18025,Michelle Huthwaite,Consumer,5,2984.948,476.9032,2015-07-08,2018-11-11,50,3,2,3,Recent / promising
+MH-18115,Mick Hernandez,Home Office,9,5503.093,170.9746,2017-08-23,2018-12-25,6,4,4,4,Champions
+MJ-17740,Max Jones,Consumer,7,6320.746,1054.5529000000001,2016-06-09,2018-12-08,23,4,3,4,Champions
+MK-17905,Michael Kennedy,Corporate,8,2302.368,-405.3559,2015-11-18,2018-12-02,29,4,4,3,Champions
+MK-18160,Mike Kennedy,Consumer,4,1031.602,227.83380000000002,2015-12-19,2018-05-04,241,1,1,1,Low engagement
+ML-17395,Marina Lichtenstein,Corporate,9,2722.843,684.9162,2015-02-14,2018-10-22,70,3,4,3,Champions
+ML-17410,Maris LaWare,Consumer,6,2921.5,-76.17550000000003,2015-11-14,2018-11-06,55,3,3,3,Champions
+ML-17755,Max Ludwig,Home Office,7,2071.9139999999998,409.51120000000003,2017-08-04,2018-12-01,30,4,3,2,Recent / promising
+ML-18040,Michelle Lonsdale,Corporate,3,742.082,138.71620000000001,2018-03-26,2018-10-12,80,2,1,1,Low engagement
+ML-18265,Muhammed Lee,Consumer,2,162.232,42.6648,2016-05-31,2018-09-21,101,2,1,1,Low engagement
+MM-17260,Magdelene Morse,Consumer,4,1314.023,178.402,2015-05-28,2018-07-15,169,2,1,2,Low engagement
+MM-17920,Michael Moore,Consumer,11,3794.0800000000004,82.12499999999997,2015-01-13,2018-12-23,8,4,4,4,Champions
+MM-18055,Michelle Moray,Consumer,8,2749.881,-520.3443,2015-04-11,2018-10-30,62,3,4,3,Champions
+MM-18280,Muhammed MacIntyre,Corporate,9,775.414,58.8916,2015-01-20,2018-10-06,86,2,4,1,Low engagement
+MN-17935,Michael Nguyen,Consumer,6,2477.946,290.8227,2015-02-16,2018-11-26,35,3,3,3,Champions
+MO-17500,Mary O'Rourke,Consumer,4,922.487,59.357699999999994,2015-11-28,2018-10-19,73,3,1,1,Recent / promising
+MO-17800,Meg O'Connel,Home Office,8,1687.0269999999998,169.34369999999998,2016-09-17,2018-09-17,105,2,4,2,Low engagement
+MO-17950,Michael Oakman,Consumer,2,154.288,-82.0074,2016-04-02,2018-07-03,181,2,1,1,Low engagement
+MP-17470,Mark Packer,Home Office,7,3206.132,600.2873,2015-03-30,2017-01-11,719,1,3,3,"Loyal, slipping"
+MP-17965,Michael Paige,Corporate,9,3983.6420000000003,638.1563,2016-04-18,2018-10-19,73,3,4,4,Champions
+MP-18175,Mike Pelletier,Home Office,9,5087.92,226.4529,2015-03-28,2018-12-14,17,4,4,4,Champions
+MR-17545,Mathew Reese,Home Office,4,639.178,162.9363,2015-09-03,2018-08-27,126,2,1,1,Low engagement
+MS-17365,Maribeth Schnelling,Consumer,10,7443.6900000000005,844.9354999999998,2015-09-09,2018-04-01,274,1,4,4,"Loyal, slipping"
+MS-17530,MaryBeth Skach,Consumer,4,475.65599999999995,84.0268,2015-11-04,2017-10-22,435,1,1,1,Low engagement
+MS-17710,Maurice Satty,Consumer,6,1613.402,247.4348,2015-03-24,2017-11-12,414,1,3,2,Low engagement
+MS-17770,Maxwell Schwartz,Consumer,9,3144.678,280.85839999999996,2015-07-04,2018-08-31,122,2,4,3,"Loyal, slipping"
+MS-17830,Melanie Seite,Consumer,4,370.348,19.431199999999997,2015-01-09,2017-10-04,453,1,1,1,Low engagement
+MS-17980,Michael Stewart,Corporate,6,855.116,55.226,2015-06-30,2018-12-04,27,4,3,1,Recent / promising
+MT-17815,Meg Tillman,Consumer,6,2890.139,509.0068,2016-11-06,2018-11-11,50,3,3,3,Champions
+MT-18070,Michelle Tran,Home Office,4,1319.4498,-23.676300000000005,2015-09-25,2018-06-10,204,1,1,2,Low engagement
+MV-17485,Mark Van Huff,Consumer,9,1560.05,189.0258,2015-01-20,2018-12-03,28,4,4,2,Recent / promising
+MV-18190,Mike Vittorini,Consumer,7,1734.574,273.8582,2015-01-30,2018-12-11,20,4,3,2,Recent / promising
+MW-18220,Mitch Webber,Consumer,7,5341.900000000001,1238.422,2015-08-25,2018-12-13,18,4,3,4,Champions
+MW-18235,Mitch Willingham,Corporate,2,5253.876,1665.516,2015-05-21,2018-11-16,45,3,1,4,Recent / promising
+MY-17380,Maribeth Yedwab,Corporate,7,2254.285,319.1211,2016-10-26,2018-12-01,30,4,3,2,Recent / promising
+MY-18295,Muhammed Yedwab,Corporate,11,4152.696,-371.7111,2015-04-28,2018-10-20,72,3,4,4,Champions
+MZ-17335,Maria Zettner,Home Office,4,593.606,85.01910000000001,2016-11-08,2018-11-30,31,4,1,1,Recent / promising
+MZ-17515,Mary Zewe,Corporate,6,2564.906,787.7503,2015-04-04,2018-03-23,283,1,3,3,"Loyal, slipping"
+NB-18580,Nicole Brennan,Corporate,2,273.87199999999996,24.788800000000002,2015-09-26,2015-10-22,1166,1,1,1,Low engagement
+NB-18655,Nona Balk,Corporate,9,1972.599,117.6429,2015-12-05,2018-12-11,20,4,4,2,Recent / promising
+NC-18340,Nat Carroll,Consumer,5,2461.404,580.3075,2015-03-30,2018-05-20,225,1,2,3,"At risk, high value"
+NC-18415,Nathan Cano,Consumer,6,2218.9900000000002,-2204.8072,2015-05-03,2018-11-19,42,3,3,2,Recent / promising
+NC-18535,Nick Crebassa,Corporate,7,8241.739,1314.758,2015-07-23,2018-12-24,7,4,3,4,Champions
+NC-18625,Noah Childs,Corporate,5,1821.742,-359.02099999999996,2015-10-29,2018-06-09,205,1,2,2,Low engagement
+ND-18370,Natalie DeCherney,Consumer,9,4326.139,353.64549999999997,2015-01-13,2018-12-03,28,4,4,4,Champions
+ND-18460,Neil Ducich,Corporate,6,2893.455,443.33680000000004,2015-02-06,2018-06-30,184,2,3,3,"Loyal, slipping"
+NF-18385,Natalie Fritzler,Consumer,7,8322.826,-1695.9714,2015-02-11,2018-10-12,80,2,3,4,"Loyal, slipping"
+NF-18475,Neil Französisch,Home Office,4,377.16200000000003,85.92779999999999,2015-03-14,2017-07-23,526,1,1,1,Low engagement
+NF-18595,Nicole Fjeld,Home Office,7,2031.472,388.2131,2015-04-19,2018-09-07,115,2,3,2,Low engagement
+NG-18355,Nat Gilpin,Corporate,5,1869.58,313.63349999999997,2015-11-24,2018-11-12,49,3,2,2,Recent / promising
+NG-18430,Nathan Gelder,Consumer,5,1395.9379999999999,217.0893,2015-11-24,2018-11-12,49,3,2,2,Recent / promising
+NH-18610,Nicole Hansen,Corporate,7,2673.29,760.1666,2015-03-02,2018-06-24,190,1,3,3,"Loyal, slipping"
+NK-18490,Neil Knudson,Home Office,7,572.048,121.2177,2016-05-28,2018-10-21,71,3,3,1,Recent / promising
+NL-18310,Nancy Lomonaco,Home Office,4,1418.0900000000001,343.6381,2015-10-31,2018-11-02,59,3,1,2,Recent / promising
+NM-18445,Nathan Mautz,Home Office,7,6459.344,2751.6848999999997,2015-02-08,2018-07-23,161,2,3,4,"Loyal, slipping"
+NM-18520,Neoma Murray,Consumer,10,2161.979,788.9525000000001,2016-09-08,2018-04-30,245,1,4,2,Low engagement
+NP-18325,Naresj Patel,Consumer,6,5529.62,1208.8890000000001,2015-05-13,2018-12-05,26,4,3,4,Champions
+NP-18670,Nora Paige,Consumer,5,3908.402,514.6002,2016-02-27,2018-11-02,59,3,2,4,Recent / promising
+NP-18685,Nora Pelletier,Home Office,6,1228.698,514.5017,2015-03-07,2017-11-19,407,1,3,2,Low engagement
+NP-18700,Nora Preis,Consumer,7,7903.1825,631.2282,2015-09-05,2018-08-14,139,2,3,4,"Loyal, slipping"
+NR-18550,Nick Radford,Consumer,5,2367.277,-25.148799999999966,2015-06-07,2018-06-03,211,1,2,3,"At risk, high value"
+NS-18505,Neola Schneider,Consumer,4,2575.863,-12.303999999999997,2017-11-24,2018-12-24,7,4,1,3,Recent / promising
+NS-18640,Noel Staavos,Corporate,13,2964.823,-234.7714,2015-06-25,2018-07-09,175,2,4,3,"Loyal, slipping"
+NW-18400,Natalie Webber,Consumer,7,7234.014,1023.123,2015-06-21,2018-07-11,173,2,3,4,"Loyal, slipping"
+NZ-18565,Nick Zandusky,Home Office,9,2488.31,402.4236,2015-08-02,2018-10-06,86,2,4,3,"Loyal, slipping"
+ON-18715,Odella Nelson,Corporate,9,1567.52,-5.88900000000001,2015-09-13,2017-11-15,411,1,4,2,Low engagement
+OT-18730,Olvera Toch,Consumer,5,3818.624,-925.1203,2016-04-20,2018-10-26,66,3,2,4,Recent / promising
+PA-19060,Pete Armstrong,Home Office,6,729.408,225.8588,2015-05-17,2018-09-18,104,2,3,1,Low engagement
+PB-18805,Patrick Bzostek,Home Office,3,740.356,229.2257,2016-11-20,2018-12-05,26,4,1,1,Recent / promising
+PB-19105,Peter Bühler,Consumer,4,688.324,218.15970000000002,2015-11-15,2018-11-03,58,3,1,1,Recent / promising
+PB-19150,Philip Brown,Consumer,8,1456.95,280.6606,2015-07-14,2018-09-24,98,2,4,2,Low engagement
+PB-19210,Phillip Breyer,Corporate,2,132.738,21.897000000000002,2015-11-23,2017-02-11,688,1,1,1,Low engagement
+PC-18745,Pamela Coakley,Corporate,4,1832.064,272.685,2015-12-31,2018-12-28,3,4,1,2,Recent / promising
+PC-19000,Pauline Chand,Home Office,2,1061.488,-184.3364,2015-04-08,2016-08-01,882,1,1,1,Low engagement
+PF-19120,Peter Fuller,Consumer,4,9062.864,-614.2943000000001,2015-05-05,2016-09-17,835,1,1,4,"At risk, high value"
+PF-19165,Philip Fox,Consumer,6,2770.0,196.87389999999996,2015-09-20,2018-06-17,197,1,3,3,"Loyal, slipping"
+PF-19225,Phillip Flathmann,Consumer,5,2206.1279999999997,591.3118000000001,2017-06-26,2018-09-07,115,2,2,2,Low engagement
+PG-18820,Patrick Gardner,Consumer,13,3086.907,137.46130000000002,2015-05-09,2018-11-24,37,3,4,3,Champions
+PG-18895,Paul Gonzalez,Consumer,9,1987.164,334.5163,2015-05-11,2018-11-03,58,3,4,2,Recent / promising
+PH-18790,Patricia Hirasaki,Home Office,1,729.648,47.8878,2018-10-21,2018-10-21,71,3,1,1,Recent / promising
+PJ-18835,Patrick Jones,Corporate,8,1220.09,442.1355,2015-05-28,2018-11-21,40,3,4,2,Recent / promising
+PJ-19015,Pauline Johnson,Consumer,7,1824.2340000000002,682.9979000000001,2015-04-07,2018-08-18,135,2,3,2,Low engagement
+PK-18910,Paul Knutson,Home Office,2,1441.152,-798.705,2015-04-04,2017-09-03,484,1,1,2,Low engagement
+PK-19075,Pete Kriz,Consumer,12,8646.934,2038.2676000000001,2015-11-11,2018-12-21,10,4,4,4,Champions
+PL-18925,Paul Lucas,Home Office,5,239.481,-0.7527000000000026,2015-11-01,2018-12-15,16,4,2,1,Recent / promising
+PM-18940,Paul MacIntyre,Consumer,3,1405.402,157.8768,2015-05-04,2017-12-09,387,1,1,2,Low engagement
+PM-19135,Peter McVee,Home Office,4,4115.662,526.7537,2016-12-19,2018-11-09,52,3,1,4,Recent / promising
+PN-18775,Parhena Norris,Home Office,8,1467.152,192.0396,2016-08-07,2018-11-30,31,4,4,2,Recent / promising
+PO-18850,Patrick O'Brill,Consumer,11,7473.8282,38.47569999999996,2015-11-02,2018-12-26,5,4,4,4,Champions
+PO-18865,Patrick O'Donnell,Consumer,7,2493.214,437.8533,2015-03-23,2018-12-30,1,4,3,3,Champions
+PO-19180,Philisse Overcash,Home Office,9,4893.043,1155.4331,2016-08-11,2018-07-23,161,2,4,4,"Loyal, slipping"
+PO-19195,Phillina Ober,Home Office,5,1056.858,-49.70089999999999,2015-01-04,2018-10-05,87,2,2,1,Low engagement
+PP-18955,Paul Prost,Home Office,10,7252.608,1495.0854,2015-08-26,2018-09-24,98,2,4,4,"Loyal, slipping"
+PR-18880,Patrick Ryan,Consumer,5,1840.178,247.6226,2015-09-05,2018-11-24,37,3,2,2,Recent / promising
+PS-18760,Pamela Stobb,Consumer,6,2181.479,-134.441,2015-06-15,2018-09-14,108,2,3,2,Low engagement
+PS-18970,Paul Stevenson,Home Office,8,1278.639,198.5099,2015-04-15,2018-10-22,70,3,4,2,Recent / promising
+PS-19045,Penelope Sewall,Home Office,7,6843.634,1742.7296999999999,2015-12-20,2018-05-08,237,1,3,4,"Loyal, slipping"
+PT-19090,Pete Takahito,Consumer,4,160.572,-20.0508,2015-09-12,2018-10-20,72,3,1,1,Recent / promising
+PV-18985,Paul Van Hugh,Home Office,5,2876.046,434.52840000000003,2015-07-12,2018-10-02,90,2,2,3,Low engagement
+PW-19030,Pauline Webber,Corporate,10,3454.916,803.8169,2015-05-16,2018-11-14,47,3,4,3,Champions
+PW-19240,Pierre Wener,Consumer,7,3922.4150000000004,1290.354,2015-11-18,2017-09-22,465,1,3,4,"Loyal, slipping"
+QJ-19255,Quincy Jones,Corporate,9,6108.338,1203.6768,2015-03-17,2018-12-05,26,4,4,4,Champions
+RA-19285,Ralph Arnett,Consumer,9,2617.906,546.0882,2015-12-13,2018-12-25,6,4,4,3,Champions
+RA-19885,Ruben Ausman,Corporate,7,3832.314,1292.8656,2015-04-08,2018-11-17,44,3,3,4,Champions
+RA-19915,Russell Applegate,Consumer,9,4793.543,304.8673,2015-06-30,2018-12-18,13,4,4,4,Champions
+RA-19945,Ryan Akin,Consumer,5,1686.9225,-445.695,2015-08-29,2018-10-30,62,3,2,2,Recent / promising
+RB-19330,Randy Bradley,Consumer,2,1008.1959999999999,-164.40619999999998,2015-11-17,2018-10-23,69,3,1,1,Recent / promising
+RB-19360,Raymond Buch,Consumer,6,15117.339,6976.0959,2017-04-01,2018-09-25,97,2,3,4,"Loyal, slipping"
+RB-19435,Richard Bierner,Consumer,8,2663.0860000000002,477.23990000000003,2015-03-11,2018-12-11,20,4,4,3,Champions
+RB-19465,Rick Bensley,Home Office,12,4715.466,640.5466,2015-03-14,2018-12-21,10,4,4,4,Champions
+RB-19570,Rob Beeghly,Consumer,5,528.546,76.8879,2017-04-28,2018-12-05,26,4,2,1,Recent / promising
+RB-19645,Robert Barroso,Corporate,5,221.084,72.679,2015-08-23,2017-03-22,649,1,2,1,Low engagement
+RB-19705,Roger Barcio,Home Office,4,2067.45,243.07549999999998,2016-08-22,2018-11-06,55,3,1,2,Recent / promising
+RB-19795,Ross Baird,Home Office,8,5633.316000000001,-461.73319999999995,2015-06-03,2018-11-28,33,3,4,4,Champions
+RC-19825,Roy Collins,Consumer,6,966.409,63.991400000000006,2015-12-05,2017-12-26,370,1,3,1,Low engagement
+RC-19960,Ryan Crowe,Consumer,6,885.752,10.563300000000002,2015-08-25,2018-09-11,111,2,3,1,Low engagement
+RD-19480,Rick Duston,Consumer,8,4272.93,480.594,2015-06-08,2018-10-19,73,3,4,4,Champions
+RD-19585,Rob Dowd,Consumer,10,2912.8940000000002,734.5158,2015-04-02,2018-07-03,181,2,4,3,"Loyal, slipping"
+RD-19660,Robert Dilbeck,Home Office,5,2786.632,835.772,2016-04-12,2018-09-07,115,2,2,3,Low engagement
+RD-19720,Roger Demir,Consumer,10,1419.737,207.3304,2015-07-20,2018-12-09,22,4,4,2,Recent / promising
+RD-19810,Ross DeVincentis,Home Office,8,1137.616,318.4625,2015-10-27,2018-12-16,15,4,4,1,Recent / promising
+RD-19900,Ruben Dartt,Consumer,9,3133.924,455.5292,2015-04-05,2018-09-07,115,2,4,3,"Loyal, slipping"
+RD-19930,Russell D'Ascenzo,Consumer,4,970.9420000000001,35.05740000000001,2015-10-03,2018-11-18,43,3,1,1,Recent / promising
+RE-19405,Ricardo Emerson,Consumer,1,48.36,6.045,2015-12-29,2015-12-29,1098,1,1,1,Low engagement
+RE-19450,Richard Eichhorn,Consumer,5,876.696,209.2294,2015-06-03,2018-03-03,303,1,2,1,Low engagement
+RF-19345,Randy Ferguson,Corporate,8,3309.15,633.7072000000001,2015-05-20,2017-12-05,391,1,4,3,"Loyal, slipping"
+RF-19735,Roland Fjeld,Consumer,7,2341.2960000000003,711.6168,2015-08-06,2018-10-02,90,2,3,3,"Loyal, slipping"
+RF-19840,Roy Französisch,Consumer,8,945.222,280.0261,2015-11-12,2018-12-24,7,4,4,1,Recent / promising
+RH-19495,Rick Hansen,Consumer,5,3621.3759999999997,563.7877,2015-08-23,2018-11-28,33,3,2,3,Recent / promising
+RH-19510,Rick Huthwaite,Home Office,6,6979.18,1289.4535,2015-11-16,2017-09-19,468,1,3,4,"Loyal, slipping"
+RH-19555,Ritsa Hightower,Consumer,2,740.382,0.30570000000000164,2016-12-04,2017-07-29,520,1,1,1,Low engagement
+RH-19600,Rob Haberlin,Consumer,3,2085.7400000000002,172.6261,2016-07-02,2017-07-14,535,1,1,2,Low engagement
+RK-19300,Ralph Kennedy,Consumer,3,1460.192,269.688,2016-07-20,2018-09-02,120,2,1,2,Low engagement
+RL-19615,Rob Lucas,Consumer,8,6234.91,488.14840000000004,2015-12-05,2018-08-31,122,2,4,4,"Loyal, slipping"
+RM-19375,Raymond Messe,Consumer,6,1453.474,392.1499,2015-05-11,2018-01-19,346,1,3,2,Low engagement
+RM-19675,Robert Marley,Home Office,5,5979.0960000000005,1902.5438000000001,2015-11-14,2018-12-24,7,4,2,4,Recent / promising
+RM-19750,Roland Murray,Consumer,1,98.35,28.6879,2018-03-06,2018-03-06,300,1,1,1,Low engagement
+RO-19780,Rose O'Brian,Consumer,7,3815.478,-1262.5716000000002,2016-05-12,2018-11-25,36,3,3,4,Champions
+RP-19270,Rachel Payne,Corporate,4,954.6452,59.538399999999996,2015-10-19,2017-08-21,497,1,1,1,Low engagement
+RP-19390,Resi Pölking,Consumer,12,5153.084,465.25030000000015,2015-05-24,2018-11-27,34,3,4,4,Champions
+RP-19855,Roy Phan,Corporate,8,2170.716,594.5868,2015-04-05,2018-12-02,29,4,4,2,Recent / promising
+RR-19315,Ralph Ritter,Consumer,2,615.932,-73.835,2017-11-14,2018-12-11,20,4,1,1,Recent / promising
+RR-19525,Rick Reed,Corporate,6,3302.2619999999997,721.6826,2015-09-09,2018-07-13,171,2,3,3,"Loyal, slipping"
+RS-19420,Ricardo Sperren,Corporate,5,3221.29,633.4513999999999,2015-08-05,2018-10-15,77,2,2,3,Low engagement
+RS-19765,Roland Schwarz,Corporate,8,4159.7699999999995,1206.3851,2015-04-07,2018-11-24,37,3,4,4,Champions
+RS-19870,Roy Skaria,Home Office,2,22.328,9.5838,2017-06-07,2018-12-11,20,4,1,1,Recent / promising
+RW-19540,Rick Wilson,Corporate,7,7397.401,1586.6273,2016-02-03,2018-09-01,121,2,3,4,"Loyal, slipping"
+RW-19630,Rob Williams,Corporate,9,3279.746,698.8325,2015-06-28,2018-10-02,90,2,4,3,"Loyal, slipping"
+RW-19690,Robert Waldorf,Consumer,5,3495.646,707.5503,2017-05-30,2018-10-12,80,2,2,3,Low engagement
+SA-20830,Sue Ann Reed,Consumer,10,4767.3415,610.1496000000001,2015-02-22,2018-10-28,64,3,4,4,Champions
+SB-20170,Sarah Bern,Consumer,3,1348.02,157.6658,2015-06-06,2018-06-12,202,1,1,2,Low engagement
+SB-20185,Sarah Brown,Consumer,6,6410.996,885.4623999999999,2015-09-20,2018-06-25,189,1,3,4,"Loyal, slipping"
+SB-20290,Sean Braxton,Corporate,7,8057.891,-2082.7451,2015-05-09,2018-11-13,48,3,3,4,Champions
+SC-20020,Sam Craven,Consumer,5,3362.9636,-317.0508,2015-03-03,2016-11-10,781,1,2,3,"At risk, high value"
+SC-20050,Sample Company A,Home Office,9,4624.572,1011.7443,2015-03-18,2018-11-20,41,3,4,4,Champions
+SC-20095,Sanjit Chand,Consumer,9,14142.333999999999,5757.411899999999,2015-02-12,2018-01-15,350,1,4,4,"Loyal, slipping"
+SC-20230,Scot Coram,Corporate,4,4371.9580000000005,440.14099999999996,2017-06-06,2018-08-03,150,2,1,4,Low engagement
+SC-20260,Scott Cohen,Corporate,8,3729.7929999999997,671.0033999999999,2015-04-06,2018-06-26,188,1,4,3,"Loyal, slipping"
+SC-20305,Sean Christensen,Consumer,7,3979.065,229.1617,2015-12-16,2018-12-01,30,4,3,4,Champions
+SC-20380,Shahid Collister,Consumer,9,5992.536,236.66149999999996,2015-03-01,2018-11-30,31,4,4,4,Champions
+SC-20440,Shaun Chance,Corporate,7,1874.998,379.5611,2016-08-17,2018-11-24,37,3,3,2,Recent / promising
+SC-20575,Sonia Cooley,Consumer,5,902.7280000000001,100.2253,2015-06-16,2018-09-29,93,2,2,1,Low engagement
+SC-20680,Steve Carroll,Home Office,6,1254.64,370.1578,2015-11-21,2018-08-26,127,2,3,2,Low engagement
+SC-20695,Steve Chapman,Corporate,10,2576.408,611.8291,2015-12-16,2018-10-02,90,2,4,3,"Loyal, slipping"
+SC-20725,Steven Cartwright,Consumer,11,5226.21,1276.6513,2015-06-03,2018-06-26,188,1,4,4,"Loyal, slipping"
+SC-20770,Stewart Carmichael,Corporate,7,4492.657,-671.1874,2016-06-20,2018-11-19,42,3,3,4,Champions
+SC-20800,Stuart Calhoun,Consumer,4,279.25600000000003,51.8252,2016-12-11,2018-11-30,31,4,1,1,Recent / promising
+SC-20845,Sung Chung,Consumer,2,280.632,31.1757,2017-11-11,2018-08-21,132,2,1,1,Low engagement
+SD-20485,Shirley Daniels,Home Office,9,6121.114,1985.1671999999999,2015-01-26,2018-06-13,201,1,4,4,"Loyal, slipping"
+SE-20110,Sanjit Engle,Consumer,11,12209.438000000002,2650.6769,2015-04-11,2018-12-21,10,4,4,4,Champions
+SF-20065,Sandra Flanagan,Consumer,7,763.5459999999999,228.1623,2015-09-10,2018-11-01,60,3,3,1,Recent / promising
+SF-20200,Sarah Foster,Consumer,9,3422.7859999999996,286.9046,2015-12-23,2018-11-01,60,3,4,3,Champions
+SF-20965,Sylvia Foulston,Corporate,9,3336.535,539.9352,2015-10-21,2018-11-12,49,3,4,3,Champions
+SG-20080,Sandra Glassco,Consumer,3,3406.5809999999997,570.438,2016-10-31,2018-12-22,9,4,1,3,Recent / promising
+SG-20470,Sheri Gordon,Consumer,8,1884.798,-119.0105,2015-07-26,2018-06-30,184,2,4,2,Low engagement
+SG-20605,Speros Goranitis,Consumer,6,3124.832,463.269,2015-01-23,2018-09-13,109,2,3,3,"Loyal, slipping"
+SG-20890,Susan Gilcrest,Corporate,3,47.946,-3.7073,2015-03-30,2018-05-18,227,1,1,1,Low engagement
+SH-19975,Sally Hughsby,Corporate,13,3406.8395,558.4739999999999,2015-12-10,2018-12-01,30,4,4,3,Champions
+SH-20395,Shahid Hopkins,Consumer,10,2180.718,-144.5229,2015-11-02,2018-12-07,24,4,4,2,Recent / promising
+SH-20635,Stefanie Holloman,Corporate,2,2096.392,260.6258,2015-12-16,2016-11-26,765,1,1,2,Low engagement
+SJ-20125,Sanjit Jacobs,Home Office,12,3949.656,144.1189,2016-09-22,2018-09-26,96,2,4,4,"Loyal, slipping"
+SJ-20215,Sarah Jordon,Consumer,6,1341.036,-23.5137,2016-02-09,2018-12-01,30,4,3,2,Recent / promising
+SJ-20500,Shirley Jackson,Consumer,5,1318.776,68.09629999999999,2015-08-31,2018-04-21,254,1,2,2,Low engagement
+SK-19990,Sally Knutson,Consumer,3,883.409,168.7933,2017-11-28,2018-12-22,9,4,1,1,Recent / promising
+SL-20155,Sara Luxemburg,Home Office,7,3053.012,527.9715,2015-09-21,2018-10-21,71,3,3,3,Champions
+SM-20005,Sally Matthias,Consumer,4,244.49399999999997,-26.5927,2015-11-23,2017-11-04,422,1,1,1,Low engagement
+SM-20320,Sean Miller,Home Office,5,25043.05,-1980.7393,2015-03-18,2018-10-12,80,2,2,4,Low engagement
+SM-20905,Susan MacKendrick,Consumer,1,1043.041,-237.2885,2017-05-03,2017-05-03,607,1,1,1,Low engagement
+SM-20950,Suzanne McNair,Corporate,12,5563.392,581.5741999999999,2015-09-29,2018-12-05,26,4,4,4,Champions
+SN-20560,Skye Norling,Home Office,6,1860.418,-716.8565000000001,2016-06-18,2018-09-10,112,2,3,2,Low engagement
+SN-20710,Steve Nguyen,Home Office,7,3127.9592,481.74989999999997,2015-05-06,2018-10-12,80,2,3,3,"Loyal, slipping"
+SO-20335,Sean O'Donnell,Consumer,6,2602.5755,-81.0858,2016-10-11,2018-12-01,30,4,3,3,Champions
+SP-20545,Sibella Parks,Corporate,6,1306.086,-118.77570000000001,2015-10-13,2018-02-06,328,1,3,2,Low engagement
+SP-20620,Stefania Perrino,Corporate,9,5440.319,-270.42819999999995,2015-09-08,2018-11-13,48,3,4,4,Champions
+SP-20650,Stephanie Phelps,Corporate,9,1872.4360000000001,268.4782,2015-04-16,2017-12-09,387,1,4,2,Low engagement
+SP-20860,Sung Pak,Corporate,10,4282.94,566.7226,2015-12-15,2018-10-12,80,2,4,4,"Loyal, slipping"
+SP-20920,Susan Pistek,Consumer,6,3990.689,14.692400000000003,2015-11-22,2018-10-21,71,3,3,4,Champions
+SR-20425,Sharelle Roach,Home Office,5,3233.481,-3333.9144,2015-06-14,2018-12-22,9,4,2,3,Recent / promising
+SR-20740,Steven Roelle,Home Office,8,4345.8859999999995,1990.4243999999999,2015-02-20,2018-06-17,197,1,4,4,"Loyal, slipping"
+SS-20140,Saphhira Shifley,Corporate,8,1324.028,332.3487,2015-11-23,2018-12-15,16,4,4,2,Recent / promising
+SS-20410,Shahid Shariari,Consumer,6,3056.8070000000002,-1010.9738,2015-05-30,2018-09-11,111,2,3,3,"Loyal, slipping"
+SS-20515,Shirley Schmidt,Home Office,3,613.4,199.93449999999999,2015-07-14,2017-08-26,492,1,1,1,Low engagement
+SS-20590,Sonia Sunley,Consumer,6,418.49,135.5401,2015-08-05,2017-10-24,433,1,3,1,Low engagement
+SS-20875,Sung Shariari,Consumer,5,964.636,-75.586,2015-12-14,2018-09-01,121,2,2,1,Low engagement
+ST-20530,Shui Tom,Consumer,7,433.34000000000003,84.4419,2015-02-14,2018-08-27,126,2,3,1,Low engagement
+SU-20665,Stephanie Ulpright,Home Office,7,2595.364,763.4719,2016-12-05,2018-12-10,21,4,3,3,Champions
+SV-20365,Seth Vernon,Consumer,10,11470.949999999999,1199.4242,2015-01-11,2018-09-20,102,2,4,4,"Loyal, slipping"
+SV-20785,Stewart Visinsky,Consumer,9,4105.305,485.0272,2015-04-12,2018-02-13,321,1,4,4,"Loyal, slipping"
+SV-20815,Stuart Van,Corporate,4,1271.0900000000001,199.6502,2016-05-04,2018-10-15,77,2,1,2,Low engagement
+SV-20935,Susan Vittorini,Consumer,8,1903.491,106.8912,2017-03-19,2018-12-28,3,4,4,2,Recent / promising
+SW-20245,Scot Wooten,Consumer,7,1085.078,-19.60620000000001,2015-07-20,2018-10-10,82,2,3,1,Low engagement
+SW-20275,Scott Williamson,Consumer,6,1966.65,332.8725,2015-03-10,2018-11-30,31,4,3,2,Recent / promising
+SW-20350,Sean Wendt,Home Office,3,1019.044,95.8383,2017-04-09,2018-07-21,163,2,1,1,Low engagement
+SW-20455,Shaun Weien,Consumer,7,2921.544,793.6548,2016-06-22,2018-07-21,163,2,3,3,"Loyal, slipping"
+SW-20755,Steven Ward,Corporate,2,758.6959999999999,68.2416,2015-11-02,2017-07-14,535,1,1,1,Low engagement
+SZ-20035,Sam Zeldin,Home Office,11,3625.329,366.43030000000005,2015-09-07,2018-11-25,36,3,4,3,Champions
+TA-21385,Tom Ashbrook,Home Office,4,14595.62,4703.7883,2015-09-12,2018-10-22,70,3,1,4,Recent / promising
+TB-21055,Ted Butterfield,Consumer,5,1467.881,390.2113,2017-06-17,2018-09-02,120,2,2,2,Low engagement
+TB-21175,Thomas Boland,Corporate,4,3589.296,829.1635,2015-12-08,2018-11-02,59,3,1,3,Recent / promising
+TB-21190,Thomas Brumley,Home Office,4,816.1740000000001,179.0038,2015-12-27,2018-11-11,50,3,1,1,Recent / promising
+TB-21250,Tim Brockman,Consumer,7,1602.376,260.6155,2015-12-08,2018-01-15,350,1,3,2,Low engagement
+TB-21280,Toby Braunhardt,Consumer,6,2198.45,490.9567,2015-06-21,2017-05-26,584,1,3,2,Low engagement
+TB-21355,Todd Boyes,Corporate,5,834.328,268.967,2017-01-25,2018-08-06,147,2,2,1,Low engagement
+TB-21400,Tom Boeckenhauer,Consumer,7,9133.99,2798.3689,2015-01-21,2018-06-11,203,1,3,4,"Loyal, slipping"
+TB-21520,Tracy Blumstein,Consumer,9,4737.486,-1603.0451,2015-10-17,2018-09-14,108,2,4,4,"Loyal, slipping"
+TB-21595,Troy Blackwell,Consumer,5,1387.559,-136.4091,2015-02-18,2018-03-20,286,1,2,2,Low engagement
+TB-21625,Trudy Brown,Consumer,9,2797.668,379.882,2015-08-06,2018-11-30,31,4,4,3,Champions
+TC-20980,Tamara Chand,Corporate,5,19052.218,8981.323900000001,2015-11-07,2017-11-26,400,1,2,4,"At risk, high value"
+TC-21145,Theresa Coyne,Corporate,1,1038.26,265.5332,2018-09-15,2018-09-15,107,2,1,1,Low engagement
+TC-21295,Toby Carlisle,Consumer,8,4266.812,606.3727,2015-10-14,2018-12-03,28,4,4,4,Champions
+TC-21475,Tony Chapman,Home Office,9,1244.976,119.104,2015-11-22,2018-07-30,154,2,4,2,Low engagement
+TC-21535,Tracy Collins,Home Office,7,742.5580000000001,217.933,2015-11-03,2018-12-26,5,4,3,1,Recent / promising
+TD-20995,Tamara Dahlen,Consumer,9,1434.5480000000002,88.1897,2015-05-19,2018-11-23,38,3,4,2,Recent / promising
+TG-21310,Toby Gnade,Consumer,5,3058.372,682.1704,2016-03-09,2018-01-27,338,1,2,3,"At risk, high value"
+TG-21640,Trudy Glocke,Consumer,4,2074.661,365.7205,2015-03-31,2018-09-07,115,2,1,2,Low engagement
+TH-21100,Thea Hendricks,Consumer,5,2422.824,-135.2125,2015-09-27,2018-01-20,345,1,2,3,"At risk, high value"
+TH-21115,Thea Hudgings,Corporate,4,2942.772,-252.5539,2015-09-23,2018-11-02,59,3,1,3,Recent / promising
+TH-21235,Tiffany House,Corporate,8,1022.201,92.729,2015-11-04,2018-09-04,118,2,4,1,Low engagement
+TH-21550,Tracy Hopkins,Home Office,7,4234.0960000000005,-571.9678,2015-04-05,2018-10-19,73,3,3,4,Champions
+TM-21010,Tamara Manning,Consumer,8,2955.2259999999997,573.3013,2015-02-21,2018-09-18,104,2,4,3,"Loyal, slipping"
+TM-21490,Tony Molinari,Consumer,3,1094.6779999999999,292.52099999999996,2018-03-30,2018-08-22,131,2,1,1,Low engagement
+TN-21040,Tanja Norvell,Home Office,7,3130.221,-692.0452,2015-10-10,2018-10-01,91,2,3,3,"Loyal, slipping"
+TP-21130,Theone Pippenger,Consumer,9,4454.0560000000005,1129.1261,2016-04-14,2018-12-22,9,4,4,4,Champions
+TP-21415,Tom Prescott,Consumer,5,5329.0048,-1087.3898,2016-11-28,2018-09-17,105,2,2,4,Low engagement
+TP-21565,Tracy Poddar,Corporate,4,1936.6399999999999,139.22869999999995,2016-03-01,2018-01-14,351,1,1,2,Low engagement
+TR-21325,Toby Ritter,Consumer,5,675.9419999999999,220.36440000000002,2015-12-01,2018-06-20,194,1,2,1,Low engagement
+TS-21085,Thais Sissman,Consumer,2,4.833,-3.3156,2016-07-19,2018-01-07,358,1,1,1,Low engagement
+TS-21160,Theresa Swint,Corporate,6,2163.6240000000003,260.87440000000004,2015-04-23,2017-08-13,505,1,3,2,Low engagement
+TS-21205,Thomas Seio,Corporate,7,5371.09,862.8877,2015-03-21,2018-06-15,199,1,3,4,"Loyal, slipping"
+TS-21340,Toby Swindell,Consumer,5,974.7819999999999,-184.97889999999998,2015-01-19,2018-05-18,227,1,2,1,Low engagement
+TS-21370,Todd Sumrall,Corporate,6,11891.751,2371.7144000000003,2015-10-28,2018-11-24,37,3,3,4,Champions
+TS-21430,Tom Stivers,Corporate,5,2054.14,48.70169999999999,2015-07-30,2018-07-11,173,2,2,2,Low engagement
+TS-21505,Tony Sayre,Consumer,6,2243.274,11.377899999999983,2015-12-20,2018-12-19,12,4,3,2,Recent / promising
+TS-21610,Troy Staebel,Consumer,7,2820.424,-294.6981,2015-08-16,2018-11-05,56,3,3,3,Champions
+TS-21655,Trudy Schmidt,Consumer,5,3368.094,220.91629999999998,2016-02-06,2018-05-06,239,1,2,3,"At risk, high value"
+TT-21070,Ted Trevino,Consumer,7,4915.602,751.9567,2015-05-18,2018-11-29,32,3,3,4,Champions
+TT-21220,Thomas Thornton,Consumer,8,1427.0439999999999,278.7371,2015-09-23,2018-06-30,184,2,4,2,Low engagement
+TT-21265,Tim Taslimi,Corporate,3,439.5,93.9162,2016-08-15,2017-11-19,407,1,1,1,Low engagement
+TT-21460,Tonja Turnell,Home Office,7,5364.808,1124.4999,2016-12-08,2018-12-18,13,4,3,4,Champions
+TW-21025,Tamara Willingham,Home Office,7,5278.826,737.3905,2015-12-22,2018-10-27,65,3,3,4,Champions
+TZ-21580,Tracy Zic,Consumer,4,1707.286,224.8887,2015-11-11,2018-11-25,36,3,1,2,Recent / promising
+VB-21745,Victoria Brennan,Corporate,6,2005.596,371.2398,2016-07-17,2018-11-06,55,3,3,2,Recent / promising
+VD-21670,Valerie Dominguez,Consumer,6,6442.254,1617.7874000000002,2015-08-04,2017-05-28,582,1,3,4,"Loyal, slipping"
+VF-21715,Vicky Freymann,Home Office,5,847.944,-96.27799999999999,2015-03-01,2018-12-17,14,4,2,1,Recent / promising
+VG-21790,Vivek Gonzalez,Consumer,6,846.01,143.6268,2015-08-08,2018-07-29,155,2,3,1,Low engagement
+VG-21805,Vivek Grady,Corporate,5,427.372,-52.333,2015-09-22,2018-03-19,287,1,2,1,Low engagement
+VM-21685,Valerie Mitchum,Home Office,7,2454.866,513.5269,2015-04-07,2018-11-06,55,3,3,3,Champions
+VM-21835,Vivian Mathis,Consumer,5,380.69,116.6373,2015-03-22,2018-09-04,118,2,2,1,Low engagement
+VP-21730,Victor Preis,Home Office,3,993.9019999999999,205.3888,2016-07-05,2018-11-30,31,4,1,1,Recent / promising
+VP-21760,Victoria Pisteka,Corporate,7,3360.526,-1018.7768,2015-09-06,2018-10-16,76,3,3,3,Champions
+VS-21820,Vivek Sundaresam,Consumer,4,1055.981,-262.8093,2015-01-07,2018-05-23,222,1,1,1,Low engagement
+VT-21700,Valerie Takahito,Home Office,2,1736.596,-224.08889999999997,2015-06-06,2016-04-05,1000,1,1,2,Low engagement
+VW-21775,Victoria Wilson,Corporate,10,6134.0380000000005,-874.6645,2015-05-11,2018-12-02,29,4,4,4,Champions
+WB-21850,William Brown,Consumer,11,6160.102,714.3311,2015-11-04,2018-12-10,21,4,4,4,Champions
+XP-21865,Xylona Preis,Consumer,11,2374.658,621.23,2015-01-20,2018-11-17,44,3,4,3,Champions
+YC-21895,Yoseph Carroll,Corporate,5,5454.35,1305.629,2015-11-17,2018-12-26,5,4,2,4,Recent / promising
+YS-21880,Yana Sorensen,Corporate,8,6720.4439999999995,1778.2923,2016-01-12,2018-12-21,10,4,4,4,Champions
+ZC-21910,Zuschuss Carroll,Consumer,13,8025.707,-1032.1490000000001,2015-10-13,2018-11-06,55,3,4,4,Champions
+ZD-21925,Zuschuss Donatelli,Consumer,5,1493.944,249.1307,2015-08-27,2018-06-11,203,1,2,2,Low engagement

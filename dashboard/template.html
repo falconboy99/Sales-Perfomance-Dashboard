@@ -1,0 +1,524 @@
+<title>Superstore Sales Performance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-basic-dist-min@4.1.1/plotly-basic.min.js"></script>
+<style>
+/* Layout: one filter bar scoping everything, KPI strip, then a two-column grid of chart cards that stacks on phones. */
+:root {
+  --page: #f4f5f7;
+  --surface: #fcfcfb;
+  --ink: #121417;
+  --ink-2: #4c5058;
+  --muted: #858a93;
+  --grid: #e3e5e8;
+  --axis: #c3c6cc;
+  --border: rgba(18, 20, 23, 0.10);
+  --accent: #1d5fb8;
+  --accent-wash: rgba(42, 120, 214, 0.10);
+  --revenue: #2a78d6;
+  --profit: #eb6834;
+  --pos: #2a78d6;
+  --neg: #e34948;
+  --mid: #f0efec;
+  --good-text: #006300;
+  --bad-text: #b42828;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #0e0f11; --surface: #191a1c; --ink: #eef0f2; --ink-2: #c0c4cb; --muted: #8b9099;
+    --grid: #2a2c30; --axis: #3a3d42; --border: rgba(255, 255, 255, 0.10);
+    --accent: #6da7ec; --accent-wash: rgba(57, 135, 229, 0.16);
+    --revenue: #3987e5; --profit: #d95926; --pos: #3987e5; --neg: #e66767; --mid: #383835;
+    --good-text: #2fbf4a; --bad-text: #f07a7a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #0e0f11; --surface: #191a1c; --ink: #eef0f2; --ink-2: #c0c4cb; --muted: #8b9099;
+  --grid: #2a2c30; --axis: #3a3d42; --border: rgba(255, 255, 255, 0.10);
+  --accent: #6da7ec; --accent-wash: rgba(57, 135, 229, 0.16);
+  --revenue: #3987e5; --profit: #d95926; --pos: #3987e5; --neg: #e66767; --mid: #383835;
+  --good-text: #2fbf4a; --bad-text: #f07a7a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--page); color: var(--ink); font-family: var(--font-body); font-size: 14px; line-height: 1.45; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 28px 20px 48px; display: grid; gap: 20px; }
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; }
+.eyebrow { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 4px 0 0; font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+.sub { color: var(--ink-2); margin: 4px 0 0; max-width: 70ch; }
+
+.filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: end;
+  background: var(--page); padding-block: 10px; border-bottom: 1px solid var(--border); }
+.filters label { display: grid; gap: 3px; font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+select, button { font: 500 14px var(--font-body); color: var(--ink); background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 7px 10px; min-height: 36px; }
+select { min-width: 130px; cursor: pointer; }
+button { cursor: pointer; }
+button:hover, select:hover { border-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.scope { margin-left: auto; color: var(--ink-2); font-size: 13px; align-self: center; }
+
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; display: grid; gap: 2px; }
+.kpi .label { font-size: 12.5px; color: var(--ink-2); font-weight: 500; }
+.kpi .value { font-size: clamp(20px, 2.4vw, 26px); font-weight: 700; letter-spacing: -0.01em; }
+.kpi .delta { font-size: 12.5px; color: var(--muted); }
+.delta.up { color: var(--good-text); }
+.delta.down { color: var(--bad-text); }
+
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 16px 10px; min-width: 0; display: grid; gap: 6px; align-content: start; }
+.card.wide { grid-column: 1 / -1; }
+.card-head { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.card h2 { margin: 0; font-size: 15px; font-weight: 600; }
+.card .note { margin: 2px 0 0; color: var(--muted); font-size: 12.5px; }
+.toggle { font-size: 12px; padding: 4px 9px; min-height: 28px; color: var(--ink-2); white-space: nowrap; }
+.plot { width: 100%; height: 300px; }
+.plot.tall { height: 420px; }
+.legend { display: flex; gap: 14px; font-size: 12.5px; color: var(--ink-2); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { padding: 7px 8px; text-align: right; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; white-space: nowrap; }
+th { font-weight: 600; color: var(--ink-2); font-size: 12px; position: sticky; top: 0; background: var(--surface); }
+th:first-child, td:first-child { text-align: left; white-space: normal; }
+td.name { max-width: 340px; }
+td .barcell { display: inline-block; height: 8px; border-radius: 0 4px 4px 0; background: var(--revenue); vertical-align: middle; margin-right: 6px; }
+.neg { color: var(--bad-text); }
+.heat td { text-align: center; font-weight: 600; }
+
+.insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.insight { border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; }
+.insight b { display: block; font-size: 13.5px; margin-bottom: 2px; }
+.insight span { color: var(--ink-2); font-size: 13px; }
+footer { color: var(--muted); font-size: 12px; }
+footer a { color: var(--accent); }
+
+@media (max-width: 900px) { .grid { grid-template-columns: minmax(0, 1fr); } .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .wrap { padding-inline: 16px; } select { min-width: 0; width: 100%; } .filters label { flex: 1 1 140px; } .scope { margin-left: 0; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Sample Superstore · US retail · Jan 2015 to Dec 2018</div>
+      <h1>Superstore Sales Performance</h1>
+      <p class="sub">Revenue, profit, products, customers and regions across 9,993 order lines. Every chart follows the filters below.</p>
+    </div>
+  </header>
+
+  <div class="filters" role="group" aria-label="Filters">
+    <label for="f-year">Year<select id="f-year"></select></label>
+    <label for="f-region">Region<select id="f-region"></select></label>
+    <label for="f-category">Category<select id="f-category"></select></label>
+    <label for="f-segment">Segment<select id="f-segment"></select></label>
+    <button id="f-reset" type="button">Reset filters</button>
+    <div class="scope" id="scope" aria-live="polite"></div>
+  </div>
+
+  <section class="kpis" id="kpis" aria-label="Key metrics"></section>
+
+  <section class="grid">
+    <article class="card wide" data-chart="trend">
+      <div class="card-head"><div><h2>Monthly revenue and profit</h2><p class="note">Sales peak every September, November and December.</p></div><button class="toggle" type="button">Table</button></div>
+      <div class="legend"><span><i style="background:var(--revenue)"></i>Revenue</span><span><i style="background:var(--profit)"></i>Profit</span></div>
+      <div class="plot"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card" data-chart="region">
+      <div class="card-head"><div><h2>Revenue and profit by region</h2><p class="note">Margin shown at the end of each pair.</p></div><button class="toggle" type="button">Table</button></div>
+      <div class="legend"><span><i style="background:var(--revenue)"></i>Revenue</span><span><i style="background:var(--profit)"></i>Profit</span></div>
+      <div class="plot"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card" data-chart="heat">
+      <div class="card-head"><div><h2>Profit margin, region by category</h2><p class="note">Blue cells make money, red cells lose it.</p></div></div>
+      <div class="tablewrap heat"></div>
+    </article>
+
+    <article class="card" data-chart="stateRev">
+      <div class="card-head"><div><h2>Top 10 states by revenue</h2></div><button class="toggle" type="button">Table</button></div>
+      <div class="plot"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card" data-chart="stateLoss">
+      <div class="card-head"><div><h2>States with the biggest losses</h2><p class="note">Ten lowest-profit states in the current selection.</p></div><button class="toggle" type="button">Table</button></div>
+      <div class="plot"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card" data-chart="category">
+      <div class="card-head"><div><h2>Category scorecard</h2></div></div>
+      <div class="tablewrap"></div>
+    </article>
+
+    <article class="card" data-chart="subcat">
+      <div class="card-head"><div><h2>Profit by sub-category</h2></div><button class="toggle" type="button">Table</button></div>
+      <div class="plot tall"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card wide" data-chart="products">
+      <div class="card-head"><div><h2>Top 10 products by revenue</h2><p class="note">High revenue does not guarantee profit: check the margin column.</p></div></div>
+      <div class="tablewrap"></div>
+    </article>
+
+    <article class="card" data-chart="segment">
+      <div class="card-head"><div><h2>Revenue and profit by customer segment</h2></div><button class="toggle" type="button">Table</button></div>
+      <div class="legend"><span><i style="background:var(--revenue)"></i>Revenue</span><span><i style="background:var(--profit)"></i>Profit</span></div>
+      <div class="plot"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card" data-chart="frequency">
+      <div class="card-head"><div><h2>How often customers order</h2><p class="note">Number of customers by count of distinct orders.</p></div><button class="toggle" type="button">Table</button></div>
+      <div class="plot"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card" data-chart="discount">
+      <div class="card-head"><div><h2>Profit margin by discount level</h2><p class="note">Discounts above 20% turn every sale into a loss.</p></div><button class="toggle" type="button">Table</button></div>
+      <div class="plot"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card" data-chart="season">
+      <div class="card-head"><div><h2>Revenue by month of year</h2></div><button class="toggle" type="button">Table</button></div>
+      <div class="plot"></div><div class="tablewrap" hidden></div>
+    </article>
+
+    <article class="card wide" data-chart="customers">
+      <div class="card-head"><div><h2>Top 10 customers by revenue</h2></div></div>
+      <div class="tablewrap"></div>
+    </article>
+
+    <article class="card wide">
+      <div class="card-head"><div><h2>Business insights</h2><p class="note">Drawn from the full four years of data.</p></div></div>
+      <div class="insights">
+        <div class="insight"><b>Revenue grew 51% from 2015 to 2018</b><span>$484K to $733K, with 29% growth in 2017 and 20% in 2018. Profit nearly doubled, $49.6K to $93.4K.</span></div>
+        <div class="insight"><b>Discounts above 20% destroy profit</b><span>Lines discounted 21 to 80% lost $135K on $362K of revenue. Undiscounted lines earn a 29.5% margin.</span></div>
+        <div class="insight"><b>Furniture sells but barely earns</b><span>Furniture is 32% of revenue at a 2.5% margin. Tables (-$17.7K) and Bookcases (-$3.5K) lose money outright.</span></div>
+        <div class="insight"><b>Central region lags on margin</b><span>Central earns 7.9% versus West at 14.9%. Texas, Ohio, Pennsylvania and Illinois lose a combined $71K.</span></div>
+        <div class="insight"><b>Technology and Office Supplies carry the business</b><span>Together they produce 94% of profit. Copiers return a 37% margin; Phones and Accessories add $86K.</span></div>
+        <div class="insight"><b>Sales peak from September to December</b><span>September to December bring 52% of annual revenue. Stock and staff for the autumn peak.</span></div>
+      </div>
+    </article>
+  </section>
+
+  <footer>Data: Tableau "Sample - Superstore" dataset (9,994 order lines, 1 duplicate removed). Returns are flagged from the dataset's own returns table. Built with pandas and Plotly.</footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const F = Object.fromEntries(DATA.fields.map((f, i) => [f, i]));
+const D = DATA.dicts;
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const YEARS = [2015, 2016, 2017, 2018];
+const yearOf = m => 2015 + Math.floor(m / 12);
+
+const fmtMoney = v => {
+  const a = Math.abs(v), s = v < 0 ? "-" : "";
+  if (a >= 1e6) return s + "$" + (a / 1e6).toFixed(2) + "M";
+  if (a >= 1e3) return s + "$" + (a / 1e3).toFixed(a >= 1e5 ? 0 : 1) + "K";
+  return s + "$" + a.toFixed(0);
+};
+const fmtFull = v => (v < 0 ? "-$" : "$") + Math.abs(v).toLocaleString("en-US", { maximumFractionDigits: 0 });
+const fmtPct = v => isFinite(v) ? (v * 100).toFixed(1) + "%" : "–";
+const fmtInt = v => v.toLocaleString("en-US");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// ---------- filters ----------
+const sel = {
+  year: document.getElementById("f-year"), region: document.getElementById("f-region"),
+  category: document.getElementById("f-category"), segment: document.getElementById("f-segment"),
+};
+function fillSelect(el, label, values) {
+  el.innerHTML = `<option value="">All ${label}</option>` + values.map((v, i) => `<option value="${i}">${esc(v)}</option>`).join("");
+}
+fillSelect(sel.year, "years", YEARS.map(String));
+fillSelect(sel.region, "regions", D.region);
+fillSelect(sel.category, "categories", D.category);
+fillSelect(sel.segment, "segments", D.segment);
+
+function current() {
+  const v = k => sel[k].value === "" ? null : +sel[k].value;
+  return { year: v("year"), region: v("region"), category: v("category"), segment: v("segment") };
+}
+function filterRows(f, opts = {}) {
+  return DATA.rows.filter(r =>
+    (opts.ignoreYear || f.year === null || yearOf(r[F.month]) === YEARS[f.year]) &&
+    (f.region === null || r[F.region] === f.region) &&
+    (f.category === null || r[F.category] === f.category) &&
+    (f.segment === null || r[F.segment] === f.segment));
+}
+function groupSum(rows, keyFn) {
+  const m = new Map();
+  for (const r of rows) {
+    const k = keyFn(r);
+    let g = m.get(k);
+    if (!g) { g = { key: k, sales: 0, profit: 0, qty: 0, n: 0, orders: new Set() }; m.set(k, g); }
+    g.sales += r[F.sales]; g.profit += r[F.profit]; g.qty += r[F.qty]; g.n++; g.orders.add(r[F.order]);
+  }
+  return [...m.values()];
+}
+function totals(rows) {
+  const t = { sales: 0, profit: 0, qty: 0, orders: new Set(), customers: new Set(), returnedOrders: new Set() };
+  for (const r of rows) {
+    t.sales += r[F.sales]; t.profit += r[F.profit]; t.qty += r[F.qty];
+    t.orders.add(r[F.order]); t.customers.add(r[F.customer]);
+    if (r[F.returned]) t.returnedOrders.add(r[F.order]);
+  }
+  return t;
+}
+
+// ---------- theme-aware plotting ----------
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function baseLayout(extra = {}) {
+  const ink = css("--ink-2"), grid = css("--grid"), axis = css("--axis");
+  const ax = { gridcolor: grid, linecolor: axis, zerolinecolor: axis, tickfont: { color: css("--muted"), size: 11 }, automargin: true, fixedrange: true };
+  return Object.assign({
+    paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",
+    font: { family: css("--font-body"), color: ink, size: 12 },
+    margin: { l: 8, r: 16, t: 8, b: 8 }, showlegend: false,
+    hoverlabel: { bgcolor: css("--surface"), bordercolor: css("--border"), font: { color: css("--ink"), family: css("--font-body") } },
+    xaxis: { ...ax }, yaxis: { ...ax }, bargap: 0.28, bargroupgap: 0.08,
+  }, extra);
+}
+const CONFIG = { displayModeBar: false, responsive: true };
+const barMarker = color => ({ color, cornerradius: 4, line: { color: css("--surface"), width: 1 } });
+
+function renderTable(container, head, rows) {
+  container.innerHTML = `<table><thead><tr>${head.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>` +
+    rows.map(r => `<tr>${r.map((c, i) => `<td${i === 0 ? ' class="name"' : ""}>${c}</td>`).join("")}</tr>`).join("") + "</tbody></table>";
+}
+const moneyCell = v => `<span class="${v < 0 ? "neg" : ""}">${fmtFull(v)}</span>`;
+const pctCell = v => `<span class="${v < 0 ? "neg" : ""}">${fmtPct(v)}</span>`;
+
+const charts = {};
+
+charts.trend = (rows, f) => {
+  const g = groupSum(rows, r => r[F.month]).sort((a, b) => a.key - b.key);
+  const x = g.map(d => `${2015 + Math.floor(d.key / 12)}-${String(d.key % 12 + 1).padStart(2, "0")}-01`);
+  const label = d => `${MONTHS[d.key % 12]} ${2015 + Math.floor(d.key / 12)}`;
+  const line = (name, vals, color) => ({
+    type: "scatter", mode: "lines+markers", name, x, y: vals, line: { color, width: 2 },
+    marker: { size: 5, color }, hovertemplate: "%{customdata}<br>" + name + ": %{y:$,.0f}<extra></extra>", customdata: g.map(label),
+  });
+  return {
+    traces: [line("Revenue", g.map(d => d.sales), css("--revenue")), line("Profit", g.map(d => d.profit), css("--profit"))],
+    layout: { hovermode: "x unified", yaxis: { tickprefix: "$", tickformat: "~s" }, xaxis: { type: "date", tickformat: "%b %Y" } },
+    table: [["Month", "Revenue", "Profit", "Margin", "Orders"], g.map(d => [label(d), fmtFull(d.sales), moneyCell(d.profit), pctCell(d.profit / d.sales), fmtInt(d.orders.size)])],
+  };
+};
+
+function pairBars(groups, labelOf, sortKey = "sales") {
+  const g = groups.slice().sort((a, b) => a[sortKey] - b[sortKey]);
+  const y = g.map(labelOf);
+  const mk = (name, key, color) => ({
+    type: "bar", orientation: "h", name, y, x: g.map(d => d[key]), marker: barMarker(color),
+    hovertemplate: "%{y}<br>" + name + ": %{x:$,.0f}<extra></extra>",
+  });
+  return {
+    traces: [mk("Profit", "profit", css("--profit")), mk("Revenue", "sales", css("--revenue"))],
+    layout: {
+      barmode: "group", xaxis: { tickprefix: "$", tickformat: "~s" },
+      annotations: g.map((d, i) => ({ x: d.sales, y: i, text: fmtPct(d.profit / d.sales), xanchor: "left", xshift: 6, yshift: 7, showarrow: false, font: { size: 11, color: css("--ink-2") } })),
+    },
+    table: [["Name", "Revenue", "Profit", "Margin", "Orders"], g.slice().reverse().map(d => [esc(labelOf(d)), fmtFull(d.sales), moneyCell(d.profit), pctCell(d.profit / d.sales), fmtInt(d.orders.size)])],
+  };
+}
+charts.region = rows => pairBars(groupSum(rows, r => r[F.region]), d => D.region[d.key]);
+charts.segment = rows => pairBars(groupSum(rows, r => r[F.segment]), d => D.segment[d.key]);
+
+function singleBars(g, labelOf, key, colorFn, fmt = "$") {
+  const y = g.map(labelOf);
+  return {
+    traces: [{
+      type: "bar", orientation: "h", y, x: g.map(d => d[key]), marker: { ...barMarker(css("--revenue")), color: g.map(colorFn) },
+      hovertemplate: "%{y}<br>%{x:$,.0f}<extra></extra>",
+    }],
+    layout: { xaxis: { tickprefix: fmt, tickformat: "~s" } },
+  };
+}
+charts.stateRev = rows => {
+  const g = groupSum(rows, r => r[F.state]).sort((a, b) => b.sales - a.sales).slice(0, 10).reverse();
+  const out = singleBars(g, d => D.state[d.key], "sales", () => css("--revenue"));
+  out.table = [["State", "Revenue", "Profit", "Margin"], g.slice().reverse().map(d => [esc(D.state[d.key]), fmtFull(d.sales), moneyCell(d.profit), pctCell(d.profit / d.sales)])];
+  return out;
+};
+charts.stateLoss = rows => {
+  const g = groupSum(rows, r => r[F.state]).sort((a, b) => a.profit - b.profit).slice(0, 10).reverse();
+  const out = singleBars(g, d => D.state[d.key], "profit", d => d.profit < 0 ? css("--neg") : css("--pos"));
+  out.table = [["State", "Profit", "Revenue", "Margin"], g.slice().reverse().map(d => [esc(D.state[d.key]), moneyCell(d.profit), fmtFull(d.sales), pctCell(d.profit / d.sales)])];
+  return out;
+};
+charts.subcat = rows => {
+  const g = groupSum(rows, r => r[F.sub]).sort((a, b) => a.profit - b.profit);
+  const out = singleBars(g, d => D.sub[d.key], "profit", d => d.profit < 0 ? css("--neg") : css("--pos"));
+  out.table = [["Sub-category", "Profit", "Revenue", "Margin", "Units"], g.slice().reverse().map(d => [esc(D.sub[d.key]), moneyCell(d.profit), fmtFull(d.sales), pctCell(d.profit / d.sales), fmtInt(d.qty)])];
+  return out;
+};
+charts.frequency = rows => {
+  const per = new Map();
+  for (const r of rows) { let s = per.get(r[F.customer]); if (!s) per.set(r[F.customer], s = new Set()); s.add(r[F.order]); }
+  const counts = new Map();
+  for (const s of per.values()) counts.set(s.size, (counts.get(s.size) || 0) + 1);
+  const k = [...counts.keys()].sort((a, b) => a - b);
+  return {
+    traces: [{ type: "bar", x: k, y: k.map(v => counts.get(v)), marker: barMarker(css("--revenue")), hovertemplate: "%{x} orders: %{y} customers<extra></extra>" }],
+    layout: { xaxis: { title: { text: "Orders per customer", font: { size: 11 } }, dtick: k.length > 20 ? 2 : 1 }, yaxis: { title: { text: "Customers", font: { size: 11 } } } },
+    table: [["Orders per customer", "Customers"], k.map(v => [String(v), fmtInt(counts.get(v))])],
+  };
+};
+charts.discount = rows => {
+  const band = d => d === 0 ? 0 : d <= 0.2 ? 1 : d <= 0.4 ? 2 : 3;
+  const names = ["No discount", "1–20%", "21–40%", "41–80%"];
+  const g = groupSum(rows, r => band(r[F.discount])).sort((a, b) => a.key - b.key);
+  const m = g.map(d => d.profit / d.sales);
+  return {
+    traces: [{ type: "bar", x: g.map(d => names[d.key]), y: m, marker: { ...barMarker(css("--pos")), color: m.map(v => v < 0 ? css("--neg") : css("--pos")) },
+      text: m.map(fmtPct), textposition: "outside", cliponaxis: false, textfont: { color: css("--ink-2"), size: 11 },
+      hovertemplate: "%{x}<br>Margin: %{y:.1%}<extra></extra>" }],
+    layout: { yaxis: { tickformat: ".0%" }, margin: { l: 8, r: 16, t: 20, b: 8 } },
+    table: [["Discount", "Revenue", "Profit", "Margin", "Order lines"], g.map(d => [names[d.key], fmtFull(d.sales), moneyCell(d.profit), pctCell(d.profit / d.sales), fmtInt(d.n)])],
+  };
+};
+charts.season = (rows, f) => {
+  const g = groupSum(rows, r => r[F.month] % 12).sort((a, b) => a.key - b.key);
+  const years = f.year === null ? 4 : 1;
+  return {
+    traces: [{ type: "bar", x: g.map(d => MONTHS[d.key]), y: g.map(d => d.sales / years), marker: barMarker(css("--revenue")),
+      hovertemplate: "%{x}: %{y:$,.0f}<extra></extra>" }],
+    layout: { yaxis: { tickprefix: "$", tickformat: "~s", title: { text: years > 1 ? "Average per year" : "Revenue", font: { size: 11 } } } },
+    table: [["Month", years > 1 ? "Avg revenue per year" : "Revenue", "Profit"], g.map(d => [MONTHS[d.key], fmtFull(d.sales / years), moneyCell(d.profit / years)])],
+  };
+};
+
+// ---------- table-only cards ----------
+function heatColor(v, maxAbs) {
+  // Diverging: blue for positive margin, red for negative, neutral near zero.
+  const t = Math.max(-1, Math.min(1, v / maxAbs));
+  const pole = t >= 0 ? css("--pos") : css("--neg");
+  const pct = Math.round(Math.abs(t) * 70);
+  return `color-mix(in srgb, ${pole} ${pct}%, ${css("--mid")})`;
+}
+function renderHeat(card, rows) {
+  const box = card.querySelector(".tablewrap");
+  const g = new Map(groupSum(rows, r => r[F.region] * 10 + r[F.category]).map(d => [d.key, d]));
+  const regions = D.region.map((_, i) => i).filter(i => [...g.keys()].some(k => Math.floor(k / 10) === i));
+  const cats = D.category.map((_, i) => i).filter(i => [...g.keys()].some(k => k % 10 === i));
+  const margins = [...g.values()].map(d => d.profit / d.sales);
+  const maxAbs = Math.max(0.05, ...margins.map(Math.abs));
+  box.innerHTML = `<table><thead><tr><th>Region</th>${cats.map(c => `<th style="text-align:center">${esc(D.category[c])}</th>`).join("")}</tr></thead><tbody>` +
+    regions.map(r => `<tr><td>${esc(D.region[r])}</td>${cats.map(c => {
+      const d = g.get(r * 10 + c);
+      if (!d) return "<td>–</td>";
+      const m = d.profit / d.sales, strong = Math.abs(m) / maxAbs > 0.6;
+      return `<td title="Profit ${fmtFull(d.profit)} on ${fmtFull(d.sales)}" style="background:${heatColor(m, maxAbs)};color:${strong ? "#fff" : "var(--ink)"}">${fmtPct(m)}<div style="font-weight:400;font-size:11px;opacity:.85">${fmtMoney(d.profit)}</div></td>`;
+    }).join("")}</tr>`).join("") + "</tbody></table>";
+}
+function renderCategory(card, rows) {
+  const g = groupSum(rows, r => r[F.category]).sort((a, b) => b.sales - a.sales);
+  const max = Math.max(...g.map(d => d.sales));
+  const total = g.reduce((s, d) => s + d.sales, 0);
+  renderTable(card.querySelector(".tablewrap"), ["Category", "Revenue", "Share", "Profit", "Margin", "Units"],
+    g.map(d => [`<b>${esc(D.category[d.key])}</b><div><span class="barcell" style="width:${Math.round(d.sales / max * 120)}px"></span></div>`,
+      fmtFull(d.sales), fmtPct(d.sales / total), moneyCell(d.profit), pctCell(d.profit / d.sales), fmtInt(d.qty)]));
+}
+function renderProducts(card, rows) {
+  const g = groupSum(rows, r => r[F.product]).sort((a, b) => b.sales - a.sales).slice(0, 10);
+  renderTable(card.querySelector(".tablewrap"), ["Product", "Sub-category", "Revenue", "Profit", "Margin", "Units"],
+    g.map(d => [esc(D.product[d.key]), esc(D.sub[DATA.subOfProduct[d.key]]), fmtFull(d.sales), moneyCell(d.profit), pctCell(d.profit / d.sales), fmtInt(d.qty)]));
+}
+function renderCustomers(card, rows) {
+  const per = new Map();
+  for (const r of rows) {
+    let c = per.get(r[F.customer]);
+    if (!c) per.set(r[F.customer], c = { key: r[F.customer], sales: 0, profit: 0, orders: new Set(), seg: r[F.segment] });
+    c.sales += r[F.sales]; c.profit += r[F.profit]; c.orders.add(r[F.order]);
+  }
+  const g = [...per.values()].sort((a, b) => b.sales - a.sales).slice(0, 10);
+  renderTable(card.querySelector(".tablewrap"), ["Customer", "Segment", "Orders", "Revenue", "Profit", "Avg order"],
+    g.map(d => [esc(D.customer[d.key]), esc(D.segment[d.seg]), fmtInt(d.orders.size), fmtFull(d.sales), moneyCell(d.profit), fmtFull(d.sales / d.orders.size)]));
+}
+
+// ---------- KPIs ----------
+function renderKpis(rows, f) {
+  const t = totals(rows);
+  let prev = null, cmpLabel = "";
+  if (f.year !== null && f.year > 0) {
+    prev = totals(filterRows({ ...f, year: f.year - 1 }));
+    cmpLabel = "vs " + YEARS[f.year - 1];
+  } else if (f.year === null) {
+    const all = filterRows(f);
+    prev = { first: totals(all.filter(r => yearOf(r[F.month]) === 2015)), last: totals(all.filter(r => yearOf(r[F.month]) === 2018)) };
+  }
+  const delta = (cur, before, isRate = false) => {
+    if (!prev || prev.first) return "";
+    const d = isRate ? cur - before : (cur - before) / Math.abs(before);
+    if (!isFinite(d)) return "";
+    const txt = isRate ? `${d >= 0 ? "+" : ""}${(d * 100).toFixed(1)} pts` : `${d >= 0 ? "+" : ""}${(d * 100).toFixed(1)}%`;
+    return `<span class="delta ${d >= 0 ? "up" : "down"}">${d >= 0 ? "▲" : "▼"} ${txt} ${cmpLabel}</span>`;
+  };
+  const margin = t.profit / t.sales, aov = t.sales / t.orders.size, rr = t.returnedOrders.size / t.orders.size;
+  let growth = "";
+  if (prev && prev.first && prev.first.sales > 0) {
+    const g = prev.last.sales / prev.first.sales - 1;
+    growth = `<span class="delta ${g >= 0 ? "up" : "down"}">${g >= 0 ? "▲" : "▼"} ${(g * 100).toFixed(0)}% from 2015 to 2018</span>`;
+  }
+  const p = prev && !prev.first ? prev : null;
+  const tiles = [
+    ["Revenue", fmtMoney(t.sales), p ? delta(t.sales, p.sales) : growth || `<span class="delta">${YEARS[f.year] || ""}</span>`],
+    ["Profit", fmtMoney(t.profit), p ? delta(t.profit, p.profit) : `<span class="delta">${fmtFull(t.profit)}</span>`],
+    ["Profit margin", fmtPct(margin), p ? delta(margin, p.profit / p.sales, true) : `<span class="delta">Profit ÷ revenue</span>`],
+    ["Orders", fmtInt(t.orders.size), p ? delta(t.orders.size, p.orders.size) : `<span class="delta">${fmtInt(rows.length)} order lines</span>`],
+    ["Customers", fmtInt(t.customers.size), p ? delta(t.customers.size, p.customers.size) : `<span class="delta">Distinct buyers</span>`],
+    ["Average order value", fmtFull(aov), p ? delta(aov, p.sales / p.orders.size) : `<span class="delta">Revenue ÷ orders</span>`],
+    ["Units sold", fmtInt(t.qty), p ? delta(t.qty, p.qty) : `<span class="delta">Quantity across all lines</span>`],
+    ["Return rate", fmtPct(rr), `<span class="delta">${fmtInt(t.returnedOrders.size)} orders returned</span>`],
+  ];
+  document.getElementById("kpis").innerHTML = tiles.map(([l, v, d]) =>
+    `<div class="kpi"><span class="label">${l}</span><span class="value">${v}</span>${d}</div>`).join("");
+}
+
+// ---------- render loop ----------
+const cards = [...document.querySelectorAll("[data-chart]")];
+function render() {
+  const f = current();
+  const rows = filterRows(f);
+  const parts = [f.year !== null && YEARS[f.year], f.region !== null && D.region[f.region], f.category !== null && D.category[f.category], f.segment !== null && D.segment[f.segment]].filter(Boolean);
+  document.getElementById("scope").textContent = `${fmtInt(rows.length)} order lines · ${parts.length ? parts.join(" · ") : "all data"}`;
+  renderKpis(rows, f);
+  for (const card of cards) {
+    const name = card.dataset.chart;
+    if (name === "heat") { renderHeat(card, rows); continue; }
+    if (name === "category") { renderCategory(card, rows); continue; }
+    if (name === "products") { renderProducts(card, rows); continue; }
+    if (name === "customers") { renderCustomers(card, rows); continue; }
+    const out = charts[name](rows, f);
+    const base = baseLayout();
+    const layout = { ...base, ...out.layout, xaxis: { ...base.xaxis, ...(out.layout.xaxis || {}) }, yaxis: { ...base.yaxis, ...(out.layout.yaxis || {}) } };
+    if (typeof Plotly !== "undefined") Plotly.react(card.querySelector(".plot"), out.traces, layout, CONFIG);
+    renderTable(card.querySelector(".tablewrap"), ...out.table);
+  }
+}
+for (const card of cards) {
+  const btn = card.querySelector(".toggle");
+  if (!btn) continue;
+  btn.addEventListener("click", () => {
+    const plot = card.querySelector(".plot"), table = card.querySelector(".tablewrap"), legend = card.querySelector(".legend");
+    const showTable = table.hidden;
+    table.hidden = !showTable; plot.hidden = showTable; if (legend) legend.hidden = showTable;
+    btn.textContent = showTable ? "Chart" : "Table";
+    if (!showTable && typeof Plotly !== "undefined") Plotly.Plots.resize(plot);
+  });
+}
+Object.values(sel).forEach(el => el.addEventListener("change", render));
+document.getElementById("f-reset").addEventListener("click", () => { Object.values(sel).forEach(el => el.value = ""); render(); });
+// Re-color charts when the viewer switches light/dark.
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+render();
+</script>
